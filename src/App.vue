@@ -1,10 +1,11 @@
 <template>
   <div id="app">
-    Hello World
+    <h1>Your product <span>vincent</span></h1>
   </div>
 </template>
 
 <script>
+
 export default {
   name: 'app',
   data () {

@@ -1,10 +1,57 @@
+$font-primary: 'FuturaPT';
+
 @font-face {
-    font-family: 'FuturaPT', sans-serif;
+    font-family: $font-primary;
     src: url('../assets/fonts/FuturaPTLight.woff') format('woff');
     font-style: normal;
     font-weight: 100;
 }
 
+@font-face {
+    font-family: $font-primary;
+    src: url('../assets/fonts/FuturaPTBook.woff') format('woff');
+    font-style: normal;
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: $font-primary;
+    src: url('../assets/fonts/FuturaPTMedium.woff') format('woff');
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: $font-primary;
+    src: url('../assets/fonts/FuturaPTHeavy.woff') format('woff');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: $font-primary;
+    src: url('../assets/fonts/FuturaPTBold.woff') format('woff');
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: $font-primary;
+    src: url('../assets/fonts/FuturaPTExtraBold.woff') format('woff');
+    font-style: normal;
+    font-weight: 600;
+}
+
 body {
-    font-family: 'FuturaPT', sans-serif;
+    font-family: $font-primary;
+}
+
+h1 {
+    font-size: 100px;
+    font-weight: 300;
+
+    span {
+        font-weight: 100;
+        text-transform: uppercase;
+    }
 }
