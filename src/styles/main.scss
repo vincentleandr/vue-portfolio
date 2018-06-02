@@ -1,57 +1,81 @@
-$font-primary: 'FuturaPT';
+$baseFont: 'FuturaPT';
 
-@font-face {
-    font-family: $font-primary;
-    src: url('../assets/fonts/FuturaPTLight.woff') format('woff');
-    font-style: normal;
-    font-weight: 100;
-}
+$light: 100;
+$book: 200;
+$medium: 300;
+$heavy: 400;
+$bold: 500;
+$extrabold: 600;
 
-@font-face {
-    font-family: $font-primary;
-    src: url('../assets/fonts/FuturaPTBook.woff') format('woff');
-    font-style: normal;
-    font-weight: 200;
-}
+$blackFont: #353535;
 
-@font-face {
-    font-family: $font-primary;
-    src: url('../assets/fonts/FuturaPTMedium.woff') format('woff');
-    font-style: normal;
-    font-weight: 300;
-}
+$maxWidth: 1500px;
 
-@font-face {
-    font-family: $font-primary;
-    src: url('../assets/fonts/FuturaPTHeavy.woff') format('woff');
-    font-style: normal;
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: $font-primary;
-    src: url('../assets/fonts/FuturaPTBold.woff') format('woff');
-    font-style: normal;
-    font-weight: 500;
-}
-
-@font-face {
-    font-family: $font-primary;
-    src: url('../assets/fonts/FuturaPTExtraBold.woff') format('woff');
-    font-style: normal;
-    font-weight: 600;
-}
+@import 'font';
+@import 'grid';
 
 body {
-    font-family: $font-primary;
+    margin: 0;
+    padding: 0;
+    font-family: $baseFont;
+    color: $blackFont;
+}
+
+
+/* Header
+===================================== */
+.header-container {
+    max-width: $maxWidth;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.header-name-text {
+    font-size: 40px;
+    font-weight: $bold;
+}
+
+.burger-menu {
+    cursor: pointer;
+    width: 40px;
+
+    .bar {
+        height: 4px;
+        background-color: $blackFont;
+        margin: 7px 0;
+        transition: all 0.5s;
+    
+        &__1 {
+            width: 25px;
+        }
+    
+        &__2 {
+            width: 35px;
+        }
+    
+        &__3 {
+            width: 45px;
+        }
+    }
+
+    &:hover {
+        .bar__1 {
+            width: 45px;
+        }
+
+        .bar__3 {
+            width: 25px;
+        }
+    }
+}
+
+section {
+    max-width: $maxWidth;
+    margin: 0 auto;
+    padding: 30px 20px;
 }
 
 h1 {
-    font-size: 100px;
-    font-weight: 300;
-
-    span {
-        font-weight: 100;
-        text-transform: uppercase;
-    }
+    font-size: 130px;
+    font-weight: $bold;
 }

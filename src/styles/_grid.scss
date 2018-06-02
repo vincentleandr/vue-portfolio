@@ -1,0 +1,19 @@
+.d-flex {
+    display: flex;
+
+    &--col {
+        flex-direction: column;
+    }
+}
+
+.j-sp-between {
+    justify-content: space-between;
+}
+
+.j-center {
+    justify-content: center;
+}
+
+.a-center {
+    align-items: center;
+}
