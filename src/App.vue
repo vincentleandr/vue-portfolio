@@ -11,8 +11,12 @@
 				<div class="bar bar__3"></div>
 			</div>
 		</header>
-		<section>
-			<h1>Vincent Leander</h1>
+		<section class="main-content main-content__fullpage d-flex a-center">
+			<div class="d-flex-col">
+				<span class="home-text-small">Hi, I'm</span>
+				<h1 class="home-name-text-big">Vincent Leander</h1>
+			</div>
+			
 		</section>
 	</div>
 </template>
