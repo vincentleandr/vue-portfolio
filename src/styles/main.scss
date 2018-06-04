@@ -8,8 +8,11 @@ $bold: 500;
 $extrabold: 600;
 
 $blackFont: #353535;
+$lightgray: #d8d8d8;
+$white: #ffffff;
+$blackBg: #232427;
 
-$maxWidth: 1500px;
+$maxWidth: 1450px;
 
 @import 'font';
 @import 'grid';
@@ -26,17 +29,34 @@ body {
 ===================================== */
 .header-container {
     margin: 0 auto;
-    padding: 30px 50px;
 }
 
-.header-name-text {
-    font-size: 32px;
-    font-weight: $bold;
+.header-name {
+	position: fixed;
+	top: 40px;
+	left: 70px;
+	width: 45px;
+	height: 45px;
+	z-index: 2;
+
+	&__text {
+		font-size: 32px;
+		font-weight: $bold;
+	}
+
+	&.white {
+		color: $white;
+	}
 }
 
 .burger-menu {
-    cursor: pointer;
-    width: 40px;
+	position: fixed;
+	top: 40px;
+	right: 70px;
+	width: 45px;
+	height: 45px;
+	cursor: pointer;
+	z-index: 2;
 
     .bar {
         height: 4px;
@@ -45,61 +65,97 @@ body {
         border-radius: 10px;
         transition: all 0.5s;
     
-        &__1 {
+        &--1 {
             width: 25px;
         }
     
-        &__2 {
+        &--2 {
             width: 35px;
         }
     
-        &__3 {
+        &--3 {
             width: 45px;
         }
     }
 
     &:hover {
-        .bar__1 {
+        .bar--1 {
             width: 45px;
         }
 
-        .bar__3 {
+        .bar--3 {
             width: 25px;
         }
-    }
+	}
+	
+	&.active {
+		.bar{
+			background-color: $white;
+			width: 45px;
+		}
+
+		.bar--1 {
+			transform: rotate(45deg) translate(11px, 10px);
+		}
+
+		.bar--2 {
+			opacity: 0;
+		}
+
+		.bar--3 {
+			transform: rotate(-45deg) translate(4px, -3px);
+		}
+	}
 }
 
+
+
+/* Menu
+===================================== */
+.menu-overlay {
+	background-color: $blackBg;
+	color: $white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	opacity: 0;
+	z-index: -1;
+	transition: all 0.5s;
+
+	&.active {
+		opacity: 1;
+		z-index: 1;
+	}
+}
+
+h2 {
+	font-size: 100px;
+	font-weight: $bold;
+}
+
+
+
+/* Home
+===================================== */
 .main-content {
     max-width: $maxWidth;
     margin: 0 auto;
 
-    &__fullpage {
-        height: calc(100vh - 141px) // 141px from header's height
+    &--fullpage {
+        height: 100vh; // 141px from header's height
     }
 }
 
 .home-text-small {
     font-size: 22px;
     font-weight: $heavy;
-    color: #d8d8d8;
-    position: relative;
-    padding-left: 50px;
-
-    &:before {
-        content: '';
-        position: absolute;
-        top: 13px;
-        left: 0;
-        width: 30px;
-        height: 3px;
-        background-color: #d8d8d8;
-
-    }
+    color: $lightgray;
 }
 
-.home-name-text-big {
+.home-text-big {
     font-size: 130px;
     font-weight: $bold;
     margin: 0;
-    padding-left: 50px;
 }
