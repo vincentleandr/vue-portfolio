@@ -17,6 +17,7 @@ $maxWidth: 1450px;
 @import 'font';
 @import 'grid';
 
+
 body {
     margin: 0;
     padding: 0;
@@ -153,6 +154,10 @@ a {
 		font-weight: $bold;
 		color: $white;
 		transition: all 0.5s;
+
+		&:hover {
+			color: $lightgray;
+		}
 	}
 
 	li {
@@ -166,17 +171,22 @@ a {
 	right: 70px;
 
 	&__option {
-		font-size: 32px;
-		font-weight: $medium;
+		font-size: 24px;
+		font-weight: $heavy;
 		color: $white;
 		transition: all 0.5s;
-		margin-right: 30px;
+		margin-right: 50px;
 
 		&:last-child {
 			margin-right: 0;
 		}
+
+		&:hover {
+			color: $lightgray;
+		}
 	}
 }
+
 
 
 /* Home
