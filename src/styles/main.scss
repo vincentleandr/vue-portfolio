@@ -16,6 +16,8 @@ $maxWidth: 1450px;
 
 @import 'font';
 @import 'grid';
+@import url('https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
 
 body {
@@ -33,6 +35,10 @@ ul {
 
 a {
 	text-decoration: none;
+
+	&:visited {
+		color: inherit;
+	}
 }
 
 
@@ -171,8 +177,7 @@ a {
 	right: 70px;
 
 	&__option {
-		font-size: 24px;
-		font-weight: $heavy;
+		font-size: 32px;
 		color: $white;
 		transition: all 0.5s;
 		margin-right: 50px;

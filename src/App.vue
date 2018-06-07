@@ -1,18 +1,21 @@
 <template>
 	<div>
 
-    <router-link :to="{ name: 'Home' }">Home</router-link>
-    <router-link to="/about">About</router-link>
-		<router-view></router-view>
+    <Header />
 
+    <router-view></router-view>
 		
 	</div>
 </template>
 
 <script>
+import Header from './components/Header'
 
 export default {
   name: 'app',
+  components: {
+    'Header': Header
+  },
   data () {
     return {
       

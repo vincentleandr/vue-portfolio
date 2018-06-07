@@ -1,8 +1,8 @@
 <template>
     <div>
         <header class="header-container">
-			<div :class="['header-name', {'white' : menuActive}]">
-				<span class="header-name__text">vl</span>
+			<div :class="['header-name', {'white' : menuActive}]" @click="menuActive = false">
+				<router-link class="header-name__text" :to="{ name: 'Home' }">vin</router-link>
 			</div>
 
 			<div :class="['burger-menu', {'active' : menuActive}]" 
@@ -18,17 +18,23 @@
             <div class="menu d-flex-col">
                 <nav class="menu-nav">
                     <ul class="d-flex-col">
-                        <li><a class="menu-nav__option" href="">Work</a></li>
-                        <li><a class="menu-nav__option" href="">About</a></li>
-                        <li><a class="menu-nav__option" href="">Contact</a></li>
+                        <li @click="menuActive = false">
+                            <router-link class="menu-nav__option" to="/work">Work</router-link>
+                        </li>
+                        <li @click="menuActive = false">
+                            <router-link class="menu-nav__option" to="/about">About</router-link>
+                        </li>
+                        <li @click="menuActive = false">
+                            <router-link class="menu-nav__option" to="/Contact">Contact</router-link>
+                        </li>
                     </ul>
                 </nav>
                 
             </div>
             <div class="menu-social d-flex j-end">
-                <a class="menu-social__option" href="">vincentleander@yahoo.com</a>
-                <a class="menu-social__option" href="">Github</a>
-                <a class="menu-social__option" href="">LinkedIn</a>
+                <a class="menu-social__option" href=""><i class="fa fa-at"></i></a>
+                <a class="menu-social__option" href=""><i class="fa fa-github"></i></a>
+                <a class="menu-social__option" href=""><i class="fa fa-linkedin"></i></a>
             </div>
         </div>
 
