@@ -1,15 +1,14 @@
 <template>
     <div>
         <header class="header-container">
-			<div :class="['header-name', {'white' : menuActive}]" @click="menuActive = false">
+			<div :class="['header-name d-flex j-center a-center', {'white' : menuActive}]" @click="menuActive = false">
 				<router-link class="header-name__text" :to="{ name: 'Home' }">vin</router-link>
 			</div>
 
-			<div :class="['burger-menu', {'active' : menuActive}]" 
+			<div :class="['burger-menu d-flex d-flex--col j-center a-end', {'active' : menuActive}]" 
 				@click="menuActive = !menuActive">
 				<div class="bar bar--1"></div>
 				<div class="bar bar--2"></div>
-				<div class="bar bar--3"></div>
 			</div>
 		</header>
 

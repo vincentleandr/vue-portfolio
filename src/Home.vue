@@ -1,8 +1,9 @@
 <template>
     <div class="main-content main-content--fullpage d-flex a-center animated fadeIn">
         <div class="d-flex-col">
-            <span class="home-text-small">Hello, I'm</span>
-            <h1 class="home-text-big">Vincent Leander</h1>
+            <span class="home-text-small">Hello.</span>
+            <h1 class="home-text-big"><span class="home-text-small">My name is </span>Vincent Leander<span class="home-text-small">,</span></h1>
+            <span class="home-text-big"><span class="home-text-small">I'm a </span>front end developer<span style="color:#FBB2AD;">.</span></span>
         </div>
     </div>
 </template>
