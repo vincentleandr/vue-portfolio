@@ -196,11 +196,37 @@ a {
 .home-text-small {
     font-size: 65px;
     font-weight: $heavy;
-    color: $lightgray;
+    color: white;
 }
 
 .home-text-big {
     font-size: 65px;
     font-weight: $bold;
 	margin: 0;
+}
+
+
+
+
+.container {
+	position: relative;
+}
+
+.skewed-bg {
+	background-color: #FBB2AD;
+	position: absolute;
+	top: 0;
+	left: -20vw;
+	width: 55%;
+	height: 100%;
+	transform: skew(-30deg);
+
+	&:after {
+		content: '';
+		width: 0px;
+		height: 100%;
+		position: absolute;
+		right: -100px;
+		background-color: rgba(0,0,0,0.1);
+	}
 }
