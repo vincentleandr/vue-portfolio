@@ -12,7 +12,7 @@ $lightgray: #ededed;
 $white: #ffffff;
 $blackBg: #232427;
 
-$maxWidth: 1450px;
+$maxWidth: 70vw;
 
 @import 'font';
 @import 'grid';
@@ -24,7 +24,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: $baseFont;
-    color: $blackFont;
+	color: $blackFont;
+	overflow-x: hidden;
 }
 
 ul {
@@ -126,12 +127,13 @@ a {
 	width: 100vw;
 	height: 100vh;
 	opacity: 0;
-	z-index: -1;
+	visibility: hidden;
 	transition: all 0.5s;
 
 	&.active {
 		opacity: 1;
 		z-index: 1;
+		visibility: visible;
 	}
 }
 
@@ -185,7 +187,8 @@ a {
 /* Home
 ===================================== */
 .main-content {
-    max-width: $maxWidth;
+	max-width: $maxWidth;
+	min-width: auto;
     margin: 0 auto;
 
     &--fullpage {
@@ -196,7 +199,7 @@ a {
 .home-text-small {
     font-size: 65px;
     font-weight: $heavy;
-    color: white;
+    color: $white;
 }
 
 .home-text-big {
@@ -213,20 +216,22 @@ a {
 }
 
 .skewed-bg {
-	background-color: #FBB2AD;
+	background-color: #62E6AC;
 	position: absolute;
-	top: 0;
-	left: -20vw;
-	width: 55%;
-	height: 100%;
+	top: 20vh;
+	left: -22vw;
+	width: 65%;
+	height: 70%;
 	transform: skew(-30deg);
+	border-radius:30%;
 
-	&:after {
+	&:before {
 		content: '';
-		width: 0px;
+		width: 1px;
 		height: 100%;
 		position: absolute;
-		right: -100px;
+		left: -100px;
 		background-color: rgba(0,0,0,0.1);
+		border-radius: 30%;
 	}
 }

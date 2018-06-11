@@ -1,5 +1,6 @@
 <template>
 	<div class="container">
+    
     <div class="skewed-bg"></div>
 
     <Header />
