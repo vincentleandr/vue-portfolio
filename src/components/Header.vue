@@ -1,11 +1,11 @@
 <template>
     <div>
         <header class="header-container">
-			<div :class="['header-name d-flex j-center a-center', {'white' : menuActive}]" @click="menuActive = false">
+			<div :class="['header-name d-flex j-center a-center', {'header-name--white' : menuActive}]" @click="menuActive = false">
 				<router-link class="header-name__text" :to="{ name: 'Home' }">vin</router-link>
 			</div>
 
-			<div :class="['burger-menu d-flex d-flex--col j-center a-end', {'active' : menuActive}]" 
+			<div :class="['burger-menu d-flex d-flex--col j-center a-end', {'burger-menu--change' : menuActive}]" 
 				@click="menuActive = !menuActive">
 				<div class="bar bar--1"></div>
 				<div class="bar bar--2"></div>
@@ -13,7 +13,7 @@
 		</header>
 
         <!-- Menu -->
-        <div :class="['menu-overlay d-flex a-center', {'active' : menuActive}]">
+        <div :class="['menu-overlay d-flex a-center', {'menu-overlay--active' : menuActive}]">
             <div class="menu d-flex-col">
                 <nav class="menu-nav">
                     <ul class="d-flex-col">
@@ -30,7 +30,7 @@
                 </nav>
                 
             </div>
-            <div class="menu-social d-flex j-end">
+            <div class="menu-social d-flex j-center">
                 <a class="menu-social__option" href=""><i class="fa fa-at"></i></a>
                 <a class="menu-social__option" href=""><i class="fa fa-github"></i></a>
                 <a class="menu-social__option" href=""><i class="fa fa-linkedin"></i></a>

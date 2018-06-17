@@ -1,7 +1,8 @@
 <template>
 	<div class="container">
-    
-    <div class="skewed-bg"></div>
+    <!--
+    <div class="skewed-bg"></div> -->
+    <div class="circle-bg"></div>
 
     <Header />
 

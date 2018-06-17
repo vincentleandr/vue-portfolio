@@ -1,7 +1,7 @@
 <template>
     <div class="main-content main-content--fullpage d-flex a-center animated fadeIn">
         <div class="d-flex-col">
-            <h1 class="home-text-big">
+            <h1>
                 Hello. <br>
                 I am Vincent Leander <br>
                 A front end developer.
