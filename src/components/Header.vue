@@ -17,13 +17,13 @@
             <div class="menu d-flex-col">
                 <nav class="menu-nav">
                     <ul class="d-flex-col">
-                        <li @click="menuActive = false">
+                        <li :class="[{'animated fadeIn' : menuActive}]" @click="menuActive = false">
                             <router-link class="menu-nav__option" to="/work">Work</router-link>
                         </li>
-                        <li @click="menuActive = false">
+                        <li :class="[{'animated fadeIn' : menuActive}]" @click="menuActive = false">
                             <router-link class="menu-nav__option" to="/about">About</router-link>
                         </li>
-                        <li @click="menuActive = false">
+                        <li :class="[{'animated fadeIn' : menuActive}]" @click="menuActive = false">
                             <router-link class="menu-nav__option" to="/Contact">Contact</router-link>
                         </li>
                     </ul>
@@ -31,9 +31,9 @@
                 
             </div>
             <div class="menu-social d-flex j-center">
-                <a class="menu-social__option" href=""><i class="fa fa-at"></i></a>
-                <a class="menu-social__option" href=""><i class="fa fa-github"></i></a>
-                <a class="menu-social__option" href=""><i class="fa fa-linkedin"></i></a>
+                <a :class="['menu-social__option', {'animated fadeInUp' : menuActive}]" href=""><i class="fa fa-at"></i></a>
+                <a :class="['menu-social__option', {'animated fadeInUp' : menuActive}]" href=""><i class="fa fa-github"></i></a>
+                <a :class="['menu-social__option', {'animated fadeInUp' : menuActive}]" href=""><i class="fa fa-linkedin"></i></a>
             </div>
         </div>
 
