@@ -1,6 +1,6 @@
 <template>
     <div class="main-content main-content--fullpage d-flex a-center animated fadeIn">
-        <div class="d-flex-col">
+        <div class="d-flex d-flex--col">
             <h1>
                 Hello. <br>
                 I am Vincent Leander <br>

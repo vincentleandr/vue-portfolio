@@ -24,7 +24,7 @@
                             <router-link class="menu-nav__option" to="/about">About</router-link>
                         </li>
                         <li :class="[{'animated fadeIn' : menuActive}]" @click="menuActive = false">
-                            <router-link class="menu-nav__option" to="/Contact">Contact</router-link>
+                            <router-link class="menu-nav__option" to="/contact">Contact</router-link>
                         </li>
                     </ul>
                 </nav>
