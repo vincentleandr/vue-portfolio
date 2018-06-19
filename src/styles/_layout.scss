@@ -24,3 +24,13 @@ a {
 		color: inherit;
 	}
 }
+
+.main-content {
+	max-width: $maxWidth;
+	min-width: auto;
+    margin: 0 auto;
+
+    &--fullpage {
+        height: 100vh; // 141px from header's height
+    }
+}

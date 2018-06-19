@@ -146,6 +146,9 @@
 		}
 		&:nth-child(3) {
 			animation-delay: 0.7s;
+		}
+
+		&:last-child {
 			margin-right: 0;
 		}
 
@@ -157,16 +160,24 @@
 
 
 
-/* Home
+/* Contact
 ===================================== */
-.main-content {
-	max-width: $maxWidth;
-	min-width: auto;
-    margin: 0 auto;
+.contact-desc {
+	margin-top: 0;
+}
 
-    &--fullpage {
-        height: 100vh; // 141px from header's height
-    }
+.contact-info {
+	padding-top: 2em;
+	border-top: 1px solid $lightgray;
+
+	&__link {
+		text-decoration: dotted;
+		transition: all 0.5s;
+
+		&:hover {
+			color: $darkgray;
+		}
+	}
 }
 
 
