@@ -55,7 +55,8 @@ $darkgray: #888888;
 
 
 
-h1 {
+h1,
+h2 {
     font-size: 4em;
     font-weight: $bold;
 }
@@ -63,14 +64,10 @@ h1 {
 p {
     font-size: 1.8em;
     font-weight: $medium;
-}
-
-.span-basic {
-    font-size: 1.4em;
-    font-weight: $medium;
+    margin-top: 0;
 }
 
 .span-label {
-    font-size: 1.2em;
+    font-size: 1.6em;
     font-weight: $bold;
 }

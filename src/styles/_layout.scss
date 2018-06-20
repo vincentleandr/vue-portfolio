@@ -25,6 +25,20 @@ a {
 	}
 }
 
+.container {
+	position: relative;
+}
+
+.circle-bg {
+	background-color: #62E6AC;
+	position: absolute;
+	top: -20vh;
+    right: -10vw;
+    width: 45vw;
+    height: 40vw;
+	border-radius: 50%;
+}
+
 .main-content {
 	max-width: $maxWidth;
 	min-width: auto;

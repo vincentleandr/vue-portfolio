@@ -31,9 +31,9 @@
                 
             </div>
             <div class="menu-social d-flex j-center">
-                <a :class="['menu-social__option', {'animated fadeInUp' : menuActive}]" href=""><i class="fa fa-at"></i></a>
-                <a :class="['menu-social__option', {'animated fadeInUp' : menuActive}]" href=""><i class="fa fa-github"></i></a>
-                <a :class="['menu-social__option', {'animated fadeInUp' : menuActive}]" href=""><i class="fa fa-linkedin"></i></a>
+                <a :class="['menu-social__option', {'animated fadeInUp' : menuActive}]" href="mailto:vincentleander@yahoo.com"><i class="fa fa-at"></i></a>
+                <a :class="['menu-social__option', {'animated fadeInUp' : menuActive}]" href="https://github.com/vincentleandr" target="_blank"><i class="fa fa-github"></i></a>
+                <a :class="['menu-social__option', {'animated fadeInUp' : menuActive}]" href="https://www.linkedin.com/in/vincent-leander" target="_blank"><i class="fa fa-linkedin"></i></a>
             </div>
         </div>
 
