@@ -185,3 +185,24 @@
 		}
 	}
 }
+
+
+
+/* About
+===================================== */
+.about-page {
+	margin-top: 155px;
+
+	&__section {
+		width: 45%;
+	}
+
+	&__title {
+		margin-top: 0;
+	}
+
+	&__img {
+		border-radius: 50px;
+		box-shadow: 0 0 40px 0 rgba(0,0,0,0.15);
+	}
+}

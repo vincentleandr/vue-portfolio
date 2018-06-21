@@ -4,7 +4,7 @@
             <h1>
                 Hello. <br> 
                 I'm Vincent Leander <br>
-                a front end developer
+                a front-end developer
             </h1>
         </div>
     </div>

@@ -1,8 +1,28 @@
 <template>
-    <div class="main-content main-content--fullpage d-flex a-center animated fadeIn">
-        <div class="d-flex d-flex--col">
-            <h1>Hello from About
-            </h1>
+    <div class="main-content d-flex d-flex--col animated fadeIn">
+        <div class="about-page d-flex j-sp-between">
+            <div class="about-page__section d-flex d-flex--col">
+                <h2 class="about-page__title">Who I Am</h2>
+                <p>My name is Vincent Leander. I'm a passionate and ambitious learner. One of my major passion has always been on web development.</p>
+                <p>It all started a year ago. I started as an intern and I was introduced to web development. Apparently, I really enjoy my time building sites and pages. I fell in love with it pretty quick and decided to make it into a career.</p>
+                <p>Along the way, I've learned a great deal of things related to web development but that doesn't mean that I stopped learning. I also found a new passion in UI/UX. I think I always have a good eyes and taste for designing things.</p>
+            </div>
+            <div class="about-page__section d-flex d-flex--col">
+                <img class="about-page__img" src="../assets/images/self-pic-2.jpg" alt="Vincent Leander">
+            </div>
+        </div>
+
+        <div class="about-page d-flex j-sp-between">
+            <div class="about-page__section d-flex d-flex--col">
+                <img class="about-page__img" src="../assets/images/typing.jpg" alt="Vincent Leander">
+            </div>
+            <div class="about-page__section d-flex d-flex--col">
+                <h2 class="about-page__title">What I Do</h2>
+                <p>I'm a Front-End Developer.</p>
+                <p>Front-End Developer is the one who builds all the visual components you can see on a website.</p>
+                <p>I prefer simplicity and minimalism when building/designing websites. However, I like to make it interactive. I believe this can make a major impact on an even a simple website to look more sophisticated and attractive to users.</p>
+                <p>I'm also a true admirer of user-experience when it comes to building websites. I always do some research before starting and I always consider the best flow and way for a website and all the user interfaces.</p>
+            </div>
         </div>
     </div>
 </template>
