@@ -8,13 +8,13 @@
                 <p>Along the way, I've learned a great deal of things related to web development but that doesn't mean that I stopped learning. I also found a new passion in UI/UX. I think I always have a good eyes and taste for designing things.</p>
             </div>
             <div class="about-page__section d-flex d-flex--col">
-                <img class="about-page__img" src="../assets/images/self-pic-2.jpg" alt="Vincent Leander">
+                <img class="about-page__img" src="../assets/images/self-pic-1.jpg" alt="Who I Am">
             </div>
         </div>
 
         <div class="about-page d-flex j-sp-between">
             <div class="about-page__section d-flex d-flex--col">
-                <img class="about-page__img" src="../assets/images/typing.jpg" alt="Vincent Leander">
+                <img class="about-page__img" src="../assets/images/typing.jpg" alt="What I Do">
             </div>
             <div class="about-page__section d-flex d-flex--col">
                 <h2 class="about-page__title">What I Do</h2>
@@ -24,6 +24,26 @@
                 <p>I'm also a true admirer of user-experience when it comes to building websites. I always do some research before starting and I always consider the best flow and way for a website and all the user interfaces.</p>
             </div>
         </div>
+
+        <div class="about-page d-flex j-sp-between">
+            <div class="about-page__section--fw d-flex d-flex--col">
+                <h2 class="about-page__title">Skill Sets</h2>
+                <div class="skill-sets d-flex">
+                    <img class="skill-sets__icon" src="../assets/icons/html5.svg" alt="HTML 5">
+                    <img class="skill-sets__icon" src="../assets/icons/css3.svg" alt="CSS 3">
+                    <img class="skill-sets__icon" src="../assets/icons/javascript.svg" alt="Javascript">
+                    <img class="skill-sets__icon" src="../assets/icons/git.svg" alt="Git">
+                    <img class="skill-sets__icon" src="../assets/icons/reactjs.svg" alt="React.js">
+                    <img class="skill-sets__icon" src="../assets/icons/vuejs.svg" alt="Vue.js">
+                    <img class="skill-sets__icon" src="../assets/icons/jquery.svg" alt="Jquery">
+                    <img class="skill-sets__icon" src="../assets/icons/sass.svg" alt="SASS">
+                    <img class="skill-sets__icon" src="../assets/icons/bootstrap.svg" alt="Bootstrap">
+                    <img class="skill-sets__icon" src="../assets/icons/webpack.svg" alt="Webpack">
+                    <img class="skill-sets__icon" src="../assets/icons/gulpjs.svg" alt="Gulp.js">
+                </div>
+            </div>
+        </div>
+
     </div>
 </template>
 
