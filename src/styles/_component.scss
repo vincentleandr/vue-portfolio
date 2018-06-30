@@ -214,12 +214,32 @@
 	flex-wrap: wrap;
 	
 	&__icon {
-		width: calc((100% - 400px) / 6);
-		height: 120px;
-		margin: 0 80px 80px 0;
+		width: calc((100% - 500px) / 6);
+		height: 160px;
+		margin: 0 100px 100px 0;
+		text-align: center;
+		position: relative;
 
-		&:nth-child(6n) {
+		&:nth-child(6n),
+		&:last-child {
 			margin-right: 0;
 		}
+
+		&:hover .skill-sets__name {
+			visibility: visible;
+			opacity: 1;
+		}
 	}
+
+	&__name {
+		position: absolute;
+		bottom: -20px;
+		font-size: 1.2em;
+		font-weight: $bold;
+		visibility: hidden;
+		opacity: 0;
+		transition: all 0.2s;
+	}
+
+	
 }

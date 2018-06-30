@@ -21,7 +21,7 @@
                 <p>I'm a Front-End Developer.</p>
                 <p>Front-End Developer is the one who builds all the visual components you can see on a website.</p>
                 <p>I prefer simplicity and minimalism when building/designing websites. However, I like to make it interactive. I believe this can make a major impact on an even a simple website to look more sophisticated and attractive to users.</p>
-                <p>I'm also a true admirer of user-experience when it comes to building websites. I always do some research before starting and I always consider the best flow and way for a website and all the user interfaces.</p>
+                <p>I'm also a true admirer of great user experience. I always do some research before starting and I always consider the best flow and way for a website and all the user interfaces.</p>
             </div>
         </div>
 
@@ -29,17 +29,50 @@
             <div class="about-page__section--fw d-flex d-flex--col">
                 <h2 class="about-page__title">Skill Sets</h2>
                 <div class="skill-sets d-flex">
-                    <img class="skill-sets__icon" src="../assets/icons/html5.svg" alt="HTML 5">
-                    <img class="skill-sets__icon" src="../assets/icons/css3.svg" alt="CSS 3">
-                    <img class="skill-sets__icon" src="../assets/icons/javascript.svg" alt="Javascript">
-                    <img class="skill-sets__icon" src="../assets/icons/git.svg" alt="Git">
-                    <img class="skill-sets__icon" src="../assets/icons/reactjs.svg" alt="React.js">
-                    <img class="skill-sets__icon" src="../assets/icons/vuejs.svg" alt="Vue.js">
-                    <img class="skill-sets__icon" src="../assets/icons/jquery.svg" alt="Jquery">
-                    <img class="skill-sets__icon" src="../assets/icons/sass.svg" alt="SASS">
-                    <img class="skill-sets__icon" src="../assets/icons/bootstrap.svg" alt="Bootstrap">
-                    <img class="skill-sets__icon" src="../assets/icons/webpack.svg" alt="Webpack">
-                    <img class="skill-sets__icon" src="../assets/icons/gulpjs.svg" alt="Gulp.js">
+                    <div class="skill-sets__icon d-flex j-center">
+                        <img src="../assets/icons/html5.svg" alt="HTML 5">
+                        <span class="skill-sets__name">HTML 5</span>
+                    </div>
+                    <div class="skill-sets__icon d-flex j-center">
+                        <img src="../assets/icons/css3.svg" alt="CSS 3">
+                        <span class="skill-sets__name">CSS 3</span>
+                    </div>
+                    <div class="skill-sets__icon d-flex j-center">
+                        <img src="../assets/icons/javascript.svg" alt="Javascript">
+                        <span class="skill-sets__name">Javascript</span>
+                    </div>
+                    <div class="skill-sets__icon d-flex j-center">
+                        <img src="../assets/icons/reactjs.svg" alt="React.js">
+                        <span class="skill-sets__name">React.js</span>
+                    </div>
+                    <div class="skill-sets__icon d-flex j-center">
+                        <img src="../assets/icons/vuejs.svg" alt="Vue.js">
+                        <span class="skill-sets__name">Vue.js</span>
+                    </div>
+                    <div class="skill-sets__icon d-flex j-center">
+                        <img src="../assets/icons/jquery.svg" alt="Jquery">
+                        <span class="skill-sets__name">JQuery</span>
+                    </div>
+                    <div class="skill-sets__icon d-flex j-center">
+                        <img src="../assets/icons/sass.svg" alt="SASS">
+                        <span class="skill-sets__name">SASS</span>
+                    </div>
+                    <div class="skill-sets__icon d-flex j-center">
+                        <img src="../assets/icons/bootstrap.svg" alt="Bootstrap">
+                        <span class="skill-sets__name">Bootstrap</span>
+                    </div>
+                    <div class="skill-sets__icon d-flex j-center">
+                        <img src="../assets/icons/git.svg" alt="Git">
+                        <span class="skill-sets__name">Git</span>
+                    </div>
+                    <div class="skill-sets__icon d-flex j-center">
+                        <img src="../assets/icons/webpack.svg" alt="Webpack">
+                        <span class="skill-sets__name">Webpack</span>
+                    </div>
+                    <div class="skill-sets__icon d-flex j-center">
+                        <img src="../assets/icons/gulpjs.svg" alt="Gulp.js">
+                        <span class="skill-sets__name">Gulp.js</span>
+                    </div>
                 </div>
             </div>
         </div>
