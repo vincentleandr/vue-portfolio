@@ -2,9 +2,9 @@
     <div class="main-content main-content--fullpage d-flex a-center animated fadeIn">
         <div class="d-flex d-flex--col">
             <h1>
-                Hello. <br> 
-                I'm Vincent Leander <br>
-                a front-end developer.
+                <span class="home-text animated fadeIn">Hello. <br></span>
+                <span class="home-text animated fadeIn">I'm Vincent Leander <br></span>
+                <span class="home-text animated fadeIn">a front-end developer</span><span class="home-text animated fadeIn">.</span>
             </h1>
         </div>
     </div>
