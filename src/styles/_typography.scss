@@ -53,7 +53,11 @@ $darkgray: #888888;
     font-weight: $extrabold;
 }
 
-
+@media only screen and (max-width: 1370px) {
+    body {
+        font-size: 14px;
+    }
+}
 
 h1,
 h2 {
@@ -71,3 +75,4 @@ p {
     font-size: 1.6em;
     font-weight: $bold;
 }
+
