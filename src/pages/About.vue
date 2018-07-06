@@ -8,25 +8,21 @@
                 <p>Along the way, I've learned a great deal of things related to web development but that doesn't mean that I stopped learning. I also found a new passion in UI/UX. I think I always have a good eyes and taste for designing things.</p>
             </div>
 
-            <div class="about-page__section d-flex d-flex--col">
-                <parallax-element :parallaxStrength="-1" :type="'translation'">
-                    <img class="about-page__img" src="../assets/images/self-pic-1.jpg" alt="Who I Am">
-                </parallax-element>
-            </div>
+            <parallax-element class="about-page__section d-flex d-flex--col" :parallaxStrength="-15" :type="'translation'">
+                <img class="about-page__img" src="../assets/images/self-pic-1.jpg" alt="Who I Am">
+            </parallax-element>
         </parallax-container>
 
         <parallax-container class="about-page d-flex j-sp-between">
-            <div class="about-page__section d-flex d-flex--col">
-                <parallax-element :parallaxStrength="-1" :type="'translation'">
-                    <img class="about-page__img" src="../assets/images/typing.jpg" alt="What I Do">
-                </parallax-element>
-            </div>
+            <parallax-element class="about-page__section d-flex d-flex--col" :parallaxStrength="-15" :type="'translation'">
+                <img class="about-page__img" src="../assets/images/typing.jpg" alt="What I Do">
+            </parallax-element>
             <div class="about-page__section d-flex d-flex--col">
                 <h2 class="about-page__title">What I Do</h2>
                 <p>I'm a Front-End Developer.</p>
                 <p>Front-End Developer is the one who builds all the visual components you can see on a website.</p>
                 <p>I prefer simplicity and minimalism when building/designing websites. However, I like to make it interactive. I believe this can make a major impact on an even a simple website to look more sophisticated and attractive to users.</p>
-                <p>I'm also a true admirer of great user experience. I always do some research before starting and I always consider the best flow and way for a website and all the user interfaces.</p>
+                <p>I'm also a true admirer of great user experience. I always do some research before starting and I always consider the best flow and way for a website and for all the user interfaces.</p>
             </div>
         </parallax-container>
 

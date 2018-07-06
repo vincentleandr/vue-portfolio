@@ -52,3 +52,25 @@ img {
         height: 100vh; // 141px from header's height
     }
 }
+
+.btn {
+	padding: 10px 25px;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 25px;
+	font-size: 1em;
+	text-transform: uppercase;
+	text-align: center;
+
+	&--main {
+		border-color: $blackBg;
+		background-color: $blackBg;
+		color: $white;
+	}
+
+	&--secondary {
+		border-color: $blackBg;
+		background-color: transparent;
+		color: $blackFont;
+	}
+}
