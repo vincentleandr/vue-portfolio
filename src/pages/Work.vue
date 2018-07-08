@@ -15,21 +15,20 @@
                     <p>Bacon ipsum dolor amet shank cupim ribeye, corned beef meatball ham hock frankfurter hamburger spare ribs sausage andouille ground round.</p>
                     <!--
                     -->
-                    <span class="span-label">Technologies</span>
                     <div class="d-flex a-center">
-                        <div class="project-details__icon-tech">
+                        <div class="project-details__icon-tech d-flex j-center a-center">
                             <img src="../assets/icons/html5.svg" alt="HTML 5">
                         </div>
-                        <div class="project-details__icon-tech">
+                        <div class="project-details__icon-tech d-flex j-center a-center">
                             <img src="../assets/icons/sass.svg" alt="HTML 5">
                         </div>
-                        <div class="project-details__icon-tech">
+                        <div class="project-details__icon-tech d-flex j-center a-center">
                             <img src="../assets/icons/reactjs.svg" alt="HTML 5">
                         </div>
-                        <div class="project-details__icon-tech">
+                        <div class="project-details__icon-tech d-flex j-center a-center">
                             <img src="../assets/icons/gulpjs.svg" alt="HTML 5">
                         </div>
-                        <div class="project-details__icon-tech">
+                        <div class="project-details__icon-tech d-flex j-center a-center">
                             <img src="../assets/icons/webpack.svg" alt="HTML 5">
                         </div>
                     </div>

@@ -1,0 +1,11 @@
+$maxWidth: 70vw;
+
+.main-content {
+	max-width: $maxWidth;
+	min-width: auto;
+    margin: 0 auto;
+
+    &--fullpage {
+        height: 100vh;
+    }
+}

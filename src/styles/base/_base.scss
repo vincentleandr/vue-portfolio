@@ -1,0 +1,94 @@
+@import 'colors';
+@import 'typography';
+
+
+
+/* Base Rules
+===================================== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $baseFont;
+	color: $blackFont;
+	overflow-x: hidden;
+}
+
+h1,
+h2 {
+    font-size: $headerSize;
+    font-weight: $bold;
+    margin: 0 0 1em 0;
+}
+
+p {
+    font-size: $paragraphSize;
+    font-weight: $medium;
+    line-height: 1.4em;
+    margin-top: 0;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+
+	&:visited {
+		color: inherit;
+	}
+}
+
+img {
+	width: 100%;
+}
+
+
+
+/* Components
+===================================== */
+.container {
+	position: relative;
+}
+
+.btn {
+	padding: 10px 25px;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 25px;
+	font-size: 1em;
+	text-transform: uppercase;
+	text-align: center;
+
+	&--main {
+		border-color: $blackBg;
+		background-color: $blackBg;
+		color: $white;
+	}
+
+	&--secondary {
+		border-color: $blackBg;
+		background-color: transparent;
+		color: $blackFont;
+	}
+}
+
+.circle-bg {
+	background-color: $greenBg;
+	position: absolute;
+	top: -20vh;
+    right: -10vw;
+    width: 45vw;
+    height: 40vw;
+	border-radius: 50%;
+}
+
+
+
+@media only screen and (max-width: 1370px) {
+    body {
+        font-size: 14px;
+    }
+}

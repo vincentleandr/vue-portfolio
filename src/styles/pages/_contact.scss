@@ -1,0 +1,22 @@
+.contact-info {
+	width: 30%;
+
+	&__det {
+		margin-bottom: 2em;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__link {
+		font-size: $paragraphSize;
+		font-weight: $bold;
+		color: $blackFont;
+		transition: all 0.5s;
+
+		&:hover {
+			color: $darkGray;
+		}
+	}
+}

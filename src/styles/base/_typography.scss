@@ -7,9 +7,8 @@ $heavy: 400;
 $bold: 500;
 $extrabold: 600;
 
-$blackFont: #353535;
-$lightGray: #ededed;
-$darkGray: #888888;
+$headerSize: 4em;
+$paragraphSize: 1.6em;
 
 @font-face {
     font-family: $baseFont;
@@ -52,29 +51,3 @@ $darkGray: #888888;
     font-style: normal;
     font-weight: $extrabold;
 }
-
-@media only screen and (max-width: 1370px) {
-    body {
-        font-size: 14px;
-    }
-}
-
-h1,
-h2 {
-    font-size: 4em;
-    font-weight: $bold;
-    margin: 0 0 1em 0;
-}
-
-p {
-    font-size: 1.6em;
-    font-weight: $medium;
-    line-height: 1.4em;
-    margin-top: 0;
-}
-
-.span-label {
-    font-size: 1.6em;
-    font-weight: $bold;
-}
-

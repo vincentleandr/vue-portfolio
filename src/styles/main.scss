@@ -1,9 +1,26 @@
-/* Internal */
-@import 'grid';
-@import 'typography';
-@import 'layout';
-@import 'component';
+/* Base
+===================================== */
+@import 'base/base';
 
-/* External */
+
+
+/* Layout
+===================================== */
+@import 'layout/grid';
+@import 'layout/layout';
+
+
+
+/* Pages
+===================================== */
+@import 'pages/home';
+@import 'pages/works';
+@import 'pages/about';
+@import 'pages/contact';
+
+
+
+/* Helpers & Vendors
+===================================== */
 @import url('https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
