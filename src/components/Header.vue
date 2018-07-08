@@ -2,7 +2,7 @@
     <div>
         <header class="header-container">
 			<div :class="['header-name d-flex j-center a-center', {'header-name--white' : menuActive}]" @click="menuActive = false">
-				<router-link class="header-name__text" :to="{ name: 'Home' }">Vin.</router-link>
+				<router-link class="header-name__text" :to="{ name: 'Home' }">Vin<span style="color: #FFE349;">.</span></router-link>
 			</div>
 
 			<div :class="['burger-menu d-flex d-flex--col j-center a-end', {'burger-menu--change' : menuActive}]" 
