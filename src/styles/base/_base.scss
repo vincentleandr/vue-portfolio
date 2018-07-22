@@ -75,13 +75,15 @@ img {
 	text-transform: uppercase;
 	text-align: center;
 
-	&--main {
+	&--main,
+	&--main:visited {
 		border-color: $blackBg;
 		background-color: $blackBg;
 		color: $white;
 	}
 
-	&--secondary {
+	&--secondary,
+	&--secondary:visited {
 		border-color: $blackBg;
 		background-color: transparent;
 		color: $blackFont;
@@ -89,7 +91,7 @@ img {
 }
 
 .circle-bg {
-	background-color: $pinkBg;
+	background-color: $greenBg;
 	position: absolute;
 	top: -20vh;
     right: -10vw;

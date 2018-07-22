@@ -16,7 +16,7 @@
                     <p>You can also find me on other platform like:</p>
                     <div class="contact-info__det d-flex">
                         <a class="menu-social__option contact-info__link" href="https://github.com/vincentleandr" target="_blank"><i class="fa fa-github"></i></a>
-                        <a class="menu-social__option contact-info__link" href="" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <a class="menu-social__option contact-info__link" href="https://www.linkedin.com/in/vincent-leander" target="_blank"><i class="fa fa-linkedin"></i></a>
                     </div>
                 </div>
             </div>

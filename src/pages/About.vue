@@ -29,7 +29,7 @@
         <div class="about-page d-flex j-sp-between">
             <div class="about-page__section--fw d-flex d-flex--col">
                 <h2 class="about-page__title">Skill Sets</h2>
-                <div class="skill-sets d-flex">
+                <div class="skill-sets d-flex j-center">
                     <div class="skill-sets__icon d-flex j-center">
                         <img src="../assets/icons/html5.svg" alt="HTML 5">
                         <span class="skill-sets__name">HTML 5</span>

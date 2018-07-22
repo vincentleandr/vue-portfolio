@@ -1,5 +1,9 @@
 .works-page {
-	margin-top: 155px;
+	margin-bottom: 30vh;
+
+	&:first-child {
+		margin-top: 155px;
+	}
 }
 
 .mac-border {
@@ -43,6 +47,22 @@
 		background: url('../assets/images/project-2.jpg') no-repeat center;
 		background-size: cover;
 	}
+	&--bg-3 {
+		background: url('../assets/images/project-3.jpg') no-repeat center;
+		background-size: cover;
+	}
+	&--bg-4 {
+		background: url('../assets/images/project-4.jpg') no-repeat center 30px;
+		background-size: cover;
+	}
+	&--bg-5 {
+		background: url('../assets/images/project-5.jpg') no-repeat center 30px;
+		background-size: cover;
+	}
+	&--bg-6 {
+		background: url('../assets/images/project-6.jpg') no-repeat center 30px;
+		background-size: cover;
+	}
 }
 
 .project-details {
@@ -50,12 +70,6 @@
 
 	&__name {
 		margin-top: 0;
-	}
-
-	&__icon-tech {
-		width: 1.8em;
-		height: 1.8em;
-		margin: 15px 15px 15px 0;
 	}
 
 	&__btn {
