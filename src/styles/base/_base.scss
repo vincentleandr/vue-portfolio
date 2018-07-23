@@ -5,12 +5,28 @@
 
 /* Base Rules
 ===================================== */
+html {
+	overflow-x: hidden;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: $baseFont;
 	color: $blackFont;
 	overflow-x: hidden;
+
+	&::-webkit-scrollbar {
+		width: 0.8em;
+	}
+	 
+	&::-webkit-scrollbar-track {
+		border: 0;
+	}
+	 
+	&::-webkit-scrollbar-thumb {
+	  background-color: $blackBg;
+	}
 }
 
 h1,
@@ -27,7 +43,7 @@ h2 {
 		left: 0;
 		width: 1.4em;
 		height: 0.2em;
-		background-color: $lightGray;
+		background-color: $orangeBg;
 		border-radius: 5px;
 		z-index: -1;
 	}
@@ -70,7 +86,7 @@ img {
 	padding: 10px 25px;
 	border-width: 2px;
 	border-style: solid;
-	border-radius: 25px;
+	border-radius: 4px;
 	font-size: 1em;
 	text-transform: uppercase;
 	text-align: center;
@@ -93,17 +109,45 @@ img {
 .circle-bg {
 	background-color: $greenBg;
 	position: absolute;
-	top: -20vh;
-    right: -10vw;
-    width: 45vw;
-    height: 40vw;
+	top: -15vh;
+    right: -8vw;
+    width: 80vh;
+    height: 75vh;
 	border-radius: 50%;
 }
 
 
 
 @media only screen and (max-width: 1370px) {
-    body {
+    html {
         font-size: 14px;
     }
+}
+
+@media only screen and (max-width: 1000px) {
+	html {
+		font-size: 13px;
+	}
+
+	.circle-bg {
+		top: -20vh;
+		right: -25vw;
+		width: 85vw;
+		height: 55vh;	
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	html {
+		font-size: 11px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.circle-bg {
+		top: -25vh;
+		right: -45vw;
+		width: 65vh;
+		height: 70vh;
+	}
 }

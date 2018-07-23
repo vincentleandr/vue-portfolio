@@ -19,8 +19,6 @@
             </parallax-element>
             <div class="about-page__section d-flex d-flex--col">
                 <h2 class="about-page__title">What I Do</h2>
-                <p>I'm a Front-End Developer.</p>
-                <p>Front-End Developer is the one who builds all the visual components you can see on a website.</p>
                 <p>I prefer simplicity and minimalism when building/designing websites. However, I like to make it interactive. I believe this can make a major impact on an even a simple website to look more sophisticated and attractive to users.</p>
                 <p>I'm also a true admirer of great user experience. I always do some research before starting and I always consider the best flow and way for a website and for all the user interfaces.</p>
             </div>

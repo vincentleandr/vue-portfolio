@@ -1,11 +1,19 @@
 $maxWidth: 70vw;
 
 .main-content {
-	max-width: $maxWidth;
+	max-width: calc(100vw - 400px);
 	min-width: auto;
     margin: 0 auto;
 
     &--fullpage {
         height: 100vh;
+    }
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+    .main-content {
+        max-width: calc(100vw - 80px);
     }
 }

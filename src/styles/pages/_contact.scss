@@ -1,22 +1,37 @@
 .contact-info {
 	width: 30%;
 
-	&__det {
-		margin-bottom: 2em;
+	&__link {
+		font-size: $paragraphSize;
+		font-weight: $medium;
+		color: $blackFont;
+		transition: all 0.5s;
+		text-decoration: underline;
+
+		i {
+			font-size: 1.3em;
+		}
+
+		&:hover {
+			color: inherit;
+			text-decoration: none;
+		}
+	}
+}
+
+
+
+@media only screen and (max-width: 1240px) {
+	.contact-info {
+		width: 100%;
+		margin-bottom: 4em;
+
+		.menu-social__option {
+			margin-right: 30px;
+		}
 
 		&:last-child {
 			margin-bottom: 0;
-		}
-	}
-
-	&__link {
-		font-size: $paragraphSize;
-		font-weight: $bold;
-		color: $blackFont;
-		transition: all 0.5s;
-
-		&:hover {
-			color: $darkGray;
 		}
 	}
 }

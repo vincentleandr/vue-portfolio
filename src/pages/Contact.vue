@@ -1,9 +1,9 @@
 <template>
     <div class="main-content main-content--fullpage d-flex a-center animated fadeIn">
-        <div class="d-flex d-flex--col">
+        <div class="contact-page d-flex d-flex--col">
             <h2>Say Hi</h2>
 
-            <div class="d-flex j-sp-between">
+            <div :class="['d-flex j-sp-between', {'d-flex--col' : window.width <= 1240}]">
                 <div class="contact-info d-flex d-flex--col">
                     <p>Want to talk about projects or something else?</p>
                     <a class="contact-info__link" href="mailto:vincentleander@yahoo.com">vincentleander@yahoo.com</a>
@@ -14,7 +14,7 @@
                 </div>
                 <div class="contact-info d-flex d-flex--col">
                     <p>You can also find me on other platform like:</p>
-                    <div class="contact-info__det d-flex">
+                    <div class="d-flex">
                         <a class="menu-social__option contact-info__link" href="https://github.com/vincentleandr" target="_blank"><i class="fa fa-github"></i></a>
                         <a class="menu-social__option contact-info__link" href="https://www.linkedin.com/in/vincent-leander" target="_blank"><i class="fa fa-linkedin"></i></a>
                     </div>
@@ -26,6 +26,27 @@
 
 <script>
 export default {
-  name: 'Contact'
+  name: 'Contact',
+  data () {
+    return {
+      window: {
+        width: 0,
+        height: 0
+      }
+    }
+  },
+  created () {
+    window.addEventListener('resize', this.handleResize)
+    this.handleResize()
+  },
+  destroyed () {
+    window.removeEventListener('resize', this.handleResize)
+  },
+  methods: {
+    handleResize () {
+      this.window.width = window.innerWidth
+      this.window.height = window.innerHeight
+    }
+  }
 }
 </script>

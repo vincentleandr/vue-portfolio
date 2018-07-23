@@ -8,14 +8,14 @@
 
 .mac-border {
 	width: 45%;
-	height: 40vh;
+	height: 45vh;
 	border-radius: 16px;
 	box-shadow: 0 0 14px 0 rgba(0,0,0,0.15);
 
 	&__top {
 		height: 30px;
 		background-color: $white;
-		border-radius: 12px 12px 0 0;
+		border-radius: 16px 16px 0 0;
 		border-bottom: 1px solid $lightGray;
 		padding: 5px 10px;
 	}
@@ -39,30 +39,37 @@
 		}
 	}
 
-	&--bg-1 {
-		background: url('../assets/images/project-1.jpg') no-repeat center;
-		background-size: cover;
+	&__bg {
+		width: 100%;
+		height: 100%;
+		border-radius: 0 0 16px 16px;
+
+		&--1 {
+			background: url('../assets/images/project-1.jpg') no-repeat center;
+			background-size: cover;
+		}
+		&--2 {
+			background: url('../assets/images/project-2.jpg') no-repeat center;
+			background-size: cover;
+		}
+		&--3 {
+			background: url('../assets/images/project-3.jpg') no-repeat center;
+			background-size: cover;
+		}
+		&--4 {
+			background: url('../assets/images/project-4.jpg') no-repeat center;
+			background-size: cover;
+		}
+		&--5 {
+			background: url('../assets/images/project-5.jpg') no-repeat center;
+			background-size: cover;
+		}
+		&--6 {
+			background: url('../assets/images/project-6.jpg') no-repeat center;
+			background-size: cover;
+		}
 	}
-	&--bg-2 {
-		background: url('../assets/images/project-2.jpg') no-repeat center;
-		background-size: cover;
-	}
-	&--bg-3 {
-		background: url('../assets/images/project-3.jpg') no-repeat center;
-		background-size: cover;
-	}
-	&--bg-4 {
-		background: url('../assets/images/project-4.jpg') no-repeat center 30px;
-		background-size: cover;
-	}
-	&--bg-5 {
-		background: url('../assets/images/project-5.jpg') no-repeat center 30px;
-		background-size: cover;
-	}
-	&--bg-6 {
-		background: url('../assets/images/project-6.jpg') no-repeat center 30px;
-		background-size: cover;
-	}
+	
 }
 
 .project-details {
@@ -70,6 +77,18 @@
 
 	&__name {
 		margin-top: 0;
+	}
+
+	&__label {
+		font-weight: 400;
+	}
+
+	&__link {
+		text-decoration: underline;
+
+		&:hover {
+			text-decoration: none;
+		}
 	}
 
 	&__btn {
