@@ -7,8 +7,11 @@ $heavy: 400;
 $bold: 500;
 $extrabold: 600;
 
-$headerSize: 4rem;
-$paragraphSize: 1.6em;
+$headerSize: 5.2rem;
+$paragraphSize: 2rem;
+
+$headerSizeMobile: 4rem;
+$paragraphSizeMobile: 1.6rem;
 
 @font-face {
     font-family: $baseFont;

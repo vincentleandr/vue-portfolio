@@ -6,6 +6,7 @@
 /* Base Rules
 ===================================== */
 html {
+	font-size: 62.5%;
 	overflow-x: hidden;
 }
 
@@ -53,7 +54,19 @@ p {
     font-size: $paragraphSize;
     font-weight: $medium;
     line-height: 1.4em;
-    margin-top: 0;
+	margin-top: 0;
+	margin-bottom: 0.8em;
+}
+
+@media only screen and (max-width: 650px) {
+	h1,
+	h2 {
+		font-size: $headerSizeMobile;
+	}
+
+	p {
+		font-size: $paragraphSizeMobile;
+	}
 }
 
 ul {
@@ -109,7 +122,7 @@ img {
 .circle-bg {
 	background-color: $greenBg;
 	position: absolute;
-	top: -15vh;
+	top: -18vh;
     right: -8vw;
     width: 80vh;
     height: 75vh;
@@ -119,28 +132,28 @@ img {
 
 
 @media only screen and (max-width: 1370px) {
-    html {
-        font-size: 14px;
-    }
+    // html {
+    //     font-size: 14px;
+    // }
 }
 
 @media only screen and (max-width: 1000px) {
-	html {
-		font-size: 13px;
-	}
+	// html {
+	// 	font-size: 13px;
+	// }
 
 	.circle-bg {
 		top: -20vh;
 		right: -25vw;
 		width: 85vw;
-		height: 55vh;	
+		height: 55vh;
 	}
 }
 
 @media only screen and (max-width: 800px) {
-	html {
-		font-size: 11px;
-	}
+	// html {
+	// 	font-size: 11px;
+	// }
 }
 
 @media only screen and (max-width: 600px) {

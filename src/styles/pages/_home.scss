@@ -102,13 +102,17 @@
 
 .menu-nav {
 	&__option {
-		font-size: 4em;
+		font-size: $headerSize;
 		font-weight: $bold;
 		color: $white;
 		transition: all 0.5s;
 
 		&:hover {
 			color: $lightGray;
+		}
+
+		@media only screen and (max-width: 650px) {
+			font-size: $headerSizeMobile;
 		}
 	}
 
@@ -134,7 +138,7 @@
 	padding: 20px 0;
 
 	&__option {
-		font-size: 2em;
+		font-size: 3rem;
 		color: $white;
 		transition: all 0.5s;
 		margin-right: 50px;
@@ -155,6 +159,10 @@
 
 		&:hover {
 			color: $lightGray;
+		}
+
+		@media only screen and (max-width: 650px) {
+			font-size: 2.5rem;
 		}
 	}
 }

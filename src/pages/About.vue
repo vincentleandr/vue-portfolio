@@ -1,23 +1,27 @@
 <template>
     <div class="main-content d-flex d-flex--col animated fadeIn">
-        <parallax-container class="about-page d-flex j-sp-between">
-            <div class="about-page__section d-flex d-flex--col">
+        <parallax-container :class="['about-page d-flex j-sp-between', {'d-flex--col' : window.width <= 650}]">
+            <parallax-element class="about-page__section--fw d-flex d-flex--col" :parallaxStrength="-15" :type="'translation'" v-if="window.width <= 650">
+                <img class="about-page__img" src="../assets/images/self-pic-1.jpg" alt="Who I Am">
+            </parallax-element>
+            
+            <div :class="['about-page__section d-flex d-flex--col', {'about-page__section--fw' : window.width <= 650}]">
                 <h2 class="about-page__title">Who I Am</h2>
                 <p>My name is Vincent Leander. I'm a passionate and ambitious learner. One of my major passion has always been on web development.</p>
                 <p>It all started a year ago. I started as an intern and I was introduced to web development. Apparently, I really enjoy my time building sites and pages. I fell in love with it pretty quick and decided to make it into a career.</p>
                 <p>Along the way, I've learned a great deal of things related to web development but that doesn't mean that I stopped learning. I also found a new passion in UI/UX. I think I always have a good eyes and taste for designing things.</p>
             </div>
 
-            <parallax-element class="about-page__section d-flex d-flex--col" :parallaxStrength="-15" :type="'translation'">
+            <parallax-element class="about-page__section d-flex d-flex--col" :parallaxStrength="-15" :type="'translation'" v-if="window.width > 650">
                 <img class="about-page__img" src="../assets/images/self-pic-1.jpg" alt="Who I Am">
             </parallax-element>
         </parallax-container>
 
-        <parallax-container class="about-page d-flex j-sp-between">
-            <parallax-element class="about-page__section d-flex d-flex--col" :parallaxStrength="-15" :type="'translation'">
+        <parallax-container :class="['about-page d-flex j-sp-between', {'d-flex--col' : window.width <= 650}]">
+            <parallax-element :class="['about-page__section d-flex d-flex--col', {'about-page__section--fw' : window.width <= 650}]" :parallaxStrength="-15" :type="'translation'">
                 <img class="about-page__img" src="../assets/images/typing.jpg" alt="What I Do">
             </parallax-element>
-            <div class="about-page__section d-flex d-flex--col">
+            <div :class="['about-page__section d-flex d-flex--col', {'about-page__section--fw' : window.width <= 650}]">
                 <h2 class="about-page__title">What I Do</h2>
                 <p>I prefer simplicity and minimalism when building/designing websites. However, I like to make it interactive. I believe this can make a major impact on an even a simple website to look more sophisticated and attractive to users.</p>
                 <p>I'm also a true admirer of great user experience. I always do some research before starting and I always consider the best flow and way for a website and for all the user interfaces.</p>
@@ -82,6 +86,27 @@
 <script>
 
 export default {
-  name: 'About'
+  name: 'About',
+  data () {
+    return {
+      window: {
+        width: 0,
+        height: 0
+      }
+    }
+  },
+  created () {
+    window.addEventListener('resize', this.handleResize)
+    this.handleResize()
+  },
+  destroyed () {
+    window.removeEventListener('resize', this.handleResize)
+  },
+  methods: {
+    handleResize () {
+      this.window.width = window.innerWidth
+      this.window.height = window.innerHeight
+    }
+  }
 }
 </script>
