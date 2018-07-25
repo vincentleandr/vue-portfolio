@@ -7,8 +7,8 @@
 }
 
 .mac-border {
-	width: 45%;
-	height: 45vh;
+	width: 50%;
+	height: 25vw;
 	border-radius: 16px;
 	box-shadow: 0 0 14px 0 rgba(0,0,0,0.15);
 
@@ -84,10 +84,11 @@
 	}
 
 	&__link {
-		text-decoration: underline;
+		font-weight: $bold;
+		color: inherit;
 
 		&:hover {
-			text-decoration: none;
+			text-decoration: underline;
 		}
 	}
 

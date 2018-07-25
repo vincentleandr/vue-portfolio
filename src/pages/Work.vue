@@ -14,7 +14,7 @@
                 <div class="project-details">
                     <h2 class="project-details__name">TV-Maze Search</h2>
                     <p>A search engine for TV Series that search through <a class="project-details__link" href="https://www.tvmaze.com/" target="_blank">TVMaze</a>'s API.</p>
-                    <p><span class="project-details__label">Built using:</span> <br>
+                    <p><span class="project-details__label">Built with:</span> <br>
                     React, Redux, SASS.</p>
                     
                     <div class="d-flex">
@@ -41,7 +41,7 @@
                 <div class="project-details">
                     <h2 class="project-details__name">My Scholarships</h2>
                     <p>A collaboration project with a friend for our thesis. The main purpose is to make the process of searching and applying for scholarships easier.</p>
-                    <p><span class="project-details__label">Built using:</span> <br>
+                    <p><span class="project-details__label">Built with:</span> <br>
                     HTML, CSS, Bootstrap, Javascript, JQuery.</p>
                     
                     <div class="d-flex">
@@ -67,7 +67,7 @@
                 <div class="project-details">
                     <h2 class="project-details__name">Personal Web</h2>
                     <p>I consider this personal web as one of my project. This personal web is also my portfolio to showcase my works.</p>
-                    <p><span class="project-details__label">Built using:</span> <br>
+                    <p><span class="project-details__label">Built with:</span> <br>
                     Vue, SASS, Webpack.</p>
                     
                     <div class="d-flex">
@@ -92,7 +92,7 @@
                 <div class="project-details">
                     <h2 class="project-details__name">Mini Quiz</h2>
                     <p>A fun mini quiz based on the famous hit series Game of Thrones. Fairly easy if you're a big fan of the show !</p>
-                    <p><span class="project-details__label">Built using:</span> <br>
+                    <p><span class="project-details__label">Built with:</span> <br>
                     HTML, CSS, Javascript, JQuery.</p>
                     
                     <div class="d-flex">
@@ -118,7 +118,7 @@
                 <div class="project-details">
                     <h2 class="project-details__name">Get It Done</h2>
                     <p>A very simple to-do list web application with minimal design.</p>
-                    <p><span class="project-details__label">Built using:</span> <br>
+                    <p><span class="project-details__label">Built with:</span> <br>
                     HTML, CSS, Javascript, JQuery.</p>
                     
                     <div class="d-flex">
@@ -144,7 +144,7 @@
                 <div class="project-details">
                     <h2 class="project-details__name">Social Card</h2>
                     <p>My first React project. I learned the basic concept of React from this project like props, state, components, etc. This is also the first time I implemented SASS on a project.</p>
-                    <p><span class="project-details__label">Built using:</span> <br>
+                    <p><span class="project-details__label">Built with:</span> <br>
                     React, SASS.</p>
                     
                     <div class="d-flex">

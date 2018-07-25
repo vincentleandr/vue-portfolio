@@ -3,7 +3,7 @@
         <div class="contact-page d-flex d-flex--col">
             <h2>Say Hi</h2>
 
-            <div :class="['d-flex j-sp-between', {'d-flex--col' : window.width <= 1240}]">
+            <div :class="['d-flex j-sp-between', {'d-flex--col' : window.width <= 1350}]">
                 <div class="contact-info d-flex d-flex--col">
                     <p>Want to talk about projects or something else?</p>
                     <a class="contact-info__link" href="mailto:vincentleander@yahoo.com">vincentleander@yahoo.com</a>

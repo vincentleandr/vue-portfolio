@@ -3,25 +3,26 @@
 
 	&__link {
 		font-size: $paragraphSize;
-		font-weight: $medium;
+		font-weight: $bold;
 		color: $blackFont;
 		transition: all 0.5s;
-		text-decoration: underline;
+		position: relative;
+		display: inline-block;
 
 		i {
-			font-size: 2.5rem;
+			font-size: 2.4rem;
 		}
 
 		&:hover {
 			color: inherit;
-			text-decoration: none;
+			text-decoration: underline;
 		}
 	}
 }
 
 
 
-@media only screen and (max-width: 1240px) {
+@media only screen and (max-width: 1350px) {
 	.contact-info {
 		width: 100%;
 		margin-bottom: 5em;
