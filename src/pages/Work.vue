@@ -1,32 +1,56 @@
 <template>
     <div class="main-content d-flex d-flex--col animated fadeIn">
-        <parallax-container class="d-flex d-flex--col works-page">
-            <div class="d-flex j-sp-between">
-                <parallax-element class="mac-border d-flex d-flex--col" :parallaxStrength="-15" :type="'translation'">
+        <div class="d-flex j-sp-between f-wrap works-page">
+            <!-- Project 1 -->
+            <div :class="['project', {'project--active' : project.one}]" @click="project.one = !project.one; overflowStatus = 'hidden'; preventScroll()">
+                <div class="mac-border d-flex d-flex--col">
                     <div class="mac-border__top d-flex a-center">
                         <div class="mac-border__btn mac-border__btn--red"></div>
                         <div class="mac-border__btn mac-border__btn--orange"></div>
                         <div class="mac-border__btn mac-border__btn--green"></div>
                     </div>
                     <div class="mac-border__bg mac-border__bg--1"></div>
-                </parallax-element>
-                
-                <div class="project-details">
-                    <h2 class="project-details__name">TV-Maze Search</h2>
-                    <p>A search engine for TV Series that search through <a class="project-details__link" href="https://www.tvmaze.com/" target="_blank">TVMaze</a>'s API.</p>
-                    <p><span class="project-details__label">Built with:</span> <br>
-                    React, Redux, SASS.</p>
-                    
-                    <div class="d-flex">
-                        <a class="btn btn--main project-details__btn" href="https://tvmaze-search.surge.sh/" target="_blank">Visit</a>
-                        <a class="btn btn--secondary project-details__btn" href="https://github.com/vincentleandr/react-redux-tvmaze" target="_blank">View Code</a>
-                    </div>
-
                 </div>
-
             </div>
-        </parallax-container>
+            <div :class="['project__overlay', {'project__overlay--active' : project.one}]">
+                
+                <div class="test-scroll">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum rerum, ullam deserunt assumenda incidunt ipsam deleniti perspiciatis ipsa officiis quidem rem harum est quasi eius ut et eveniet labore quia.
+                    <span @click="project.one = false; overflowStatus = 'scroll'; preventScroll()">Back</span>
+                </div>
+            </div>
+            <!--
+            <div class="project-details">
+                <h2 class="project-details__name">TV-Maze Search</h2>
+                <p>A search engine for TV Series that search through <a class="project-details__link" href="https://www.tvmaze.com/" target="_blank">TVMaze</a>'s API.</p>
+                <p><span class="project-details__label">Built with:</span> <br>
+                React, Redux, SASS.</p>
+                
+                <div class="d-flex">
+                    <a class="btn btn--main project-details__btn" href="https://tvmaze-search.surge.sh/" target="_blank">Visit</a>
+                    <a class="btn btn--secondary project-details__btn" href="https://github.com/vincentleandr/react-redux-tvmaze" target="_blank">View Code</a>
+                </div>
+            </div>
+            -->
 
+            <!-- Project 2 -->
+            <div :class="['project project--right', {'project--active' : project.two}]" @click="project.two = !project.two">
+                <div class="mac-border d-flex d-flex--col">
+                    <div class="mac-border__top d-flex a-center">
+                        <div class="mac-border__btn mac-border__btn--red"></div>
+                        <div class="mac-border__btn mac-border__btn--orange"></div>
+                        <div class="mac-border__btn mac-border__btn--green"></div>
+                    </div>
+                    <div class="mac-border__bg mac-border__bg--2"></div>
+                </div>
+            </div>
+            <div :class="['project__overlay', {'project__overlay--active' : project.two}]">
+                <span @click="project.two = false">Back</span>
+            </div>
+            
+        </div>
+
+        <!--
         <parallax-container class="d-flex d-flex--col works-page">
             <div class="d-flex j-sp-between">
                 <parallax-element class="mac-border d-flex d-flex--col" :parallaxStrength="-15" :type="'translation'">
@@ -155,11 +179,27 @@
 
             </div>
         </parallax-container>
+        -->
+
     </div>
 </template>
 
 <script>
 export default {
-  name: 'Work'
+  name: 'Work',
+  data () {
+    return {
+      project: {
+          one: false,
+          two: false
+      },
+      overflowStatus: ''
+    }
+  },
+  methods: {
+    preventScroll () {
+      document.getElementsByTagName('html')[0].style.overflowY = this.overflowStatus
+    }
+  }
 }
 </script>
