@@ -1,9 +1,11 @@
 <template>
     <div class="main-content d-flex d-flex--col animated fadeIn">
         <div class="d-flex j-sp-between f-wrap works-page">
+
             <!-- Project 1 -->
-            <div :class="['project', {'project--active' : project.one}]" @click="project.one = !project.one; overflowStatus = 'hidden'; preventScroll()">
-                <div class="mac-border d-flex d-flex--col">
+            <div :class="['overlay', {'overlay--active' : project.one}]">
+
+                <div :class="['mac-border d-flex d-flex--col', {'mac-border--active' : project.one}]" @click="project.one = !project.one; overflowStatus = 'hidden'; preventScroll()">
                     <div class="mac-border__top d-flex a-center">
                         <div class="mac-border__btn mac-border__btn--red"></div>
                         <div class="mac-border__btn mac-border__btn--orange"></div>
@@ -11,14 +13,18 @@
                     </div>
                     <div class="mac-border__bg mac-border__bg--1"></div>
                 </div>
-            </div>
-            <div :class="['project__overlay', {'project__overlay--active' : project.one}]">
-                
-                <div class="test-scroll">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum rerum, ullam deserunt assumenda incidunt ipsam deleniti perspiciatis ipsa officiis quidem rem harum est quasi eius ut et eveniet labore quia.
-                    <span @click="project.one = false; overflowStatus = 'scroll'; preventScroll()">Back</span>
+
+                <div :class="['project-details', {'project-details--active' : project.one}]">
+                    <h2 class="project-details__name">TV-Maze Search</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus tempora dicta repellat blanditiis amet in, itaque, sint error quidem nulla rerum, a molestiae voluptates modi est earum officiis adipisci ipsam!</p>
+
+                    <a class="project-details__link btn-back" href="javascript:;" @click="project.one = false; overflowStatus = 'scroll'; preventScroll()">Back</a>
                 </div>
+                
             </div>
+            
+            
+
             <!--
             <div class="project-details">
                 <h2 class="project-details__name">TV-Maze Search</h2>
@@ -33,7 +39,7 @@
             </div>
             -->
 
-            <!-- Project 2 -->
+            <!-- Project 2 
             <div :class="['project project--right', {'project--active' : project.two}]" @click="project.two = !project.two">
                 <div class="mac-border d-flex d-flex--col">
                     <div class="mac-border__top d-flex a-center">
@@ -47,6 +53,7 @@
             <div :class="['project__overlay', {'project__overlay--active' : project.two}]">
                 <span @click="project.two = false">Back</span>
             </div>
+            -->
             
         </div>
 
@@ -198,6 +205,7 @@ export default {
   },
   methods: {
     preventScroll () {
+      window.scrollTo(0, 0)
       document.getElementsByTagName('html')[0].style.overflowY = this.overflowStatus
     }
   }

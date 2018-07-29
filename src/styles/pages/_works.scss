@@ -1,7 +1,7 @@
 .works-page {
 	// margin-bottom: 30vh;
 	min-height: 100vh;
-	position: relative;
+	// position: relative;
 
 	&:first-child {
 		margin-top: 155px;
@@ -9,44 +9,60 @@
 }
 
 .test-scroll {
-	margin-top: 130vh;
 	font-size: 7rem;
+	margin-top: 50px;
 }
 
 .project {
-	width: 48%;
+	width: 100%;
 	cursor: pointer;
 	transition: all 1s;
-
-	&__overlay {
-		background-color: $white;
-		color: $blackFont;
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100vw;
-		height: 100vh;
-		opacity: 0;
-		visibility: hidden;
-		transition: all 0.3s;
-		overflow-y: scroll;
-
-		&--active {
-			opacity: 1;
-			z-index: 1;
-			visibility: visible;
-		}
-	}
 
 	&--active {
 		position: absolute;
 		width: 100%;
 		z-index: 2;
-		pointer-events: none;
+
+		.mac-border {
+			width: 80%;
+			height: 40vw;
+			margin: 155px auto 30px auto; 
+		}
 	}
 
 	&--right {
 		right: 0;
+	}
+}
+
+.overlay {
+	background-color: transparent;
+	color: $blackFont;
+	width: 48%;
+	transition: all 0.3s;
+
+	&--active {
+		background-color: $white;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		opacity: 1;
+		z-index: 1;
+		overflow-y: scroll;
+	}
+
+	&::-webkit-scrollbar {
+		width: 0.8em;
+	}
+	 
+	&::-webkit-scrollbar-track {
+		border: 0;
+	}
+	 
+	&::-webkit-scrollbar-thumb {
+		background-color: $blackBg;
 	}
 }
 
@@ -55,6 +71,15 @@
 	height: 25vw;
 	border-radius: 16px;
 	box-shadow: 0 0 14px 0 rgba(0,0,0,0.15);
+	transition: all 1s;
+	cursor: pointer;
+
+	&--active {
+		width: 80%;
+		height: 40vw;
+		margin: 155px auto 30px auto;
+		pointer-events: none;
+	}
 
 	&__top {
 		height: 30px;
@@ -117,7 +142,16 @@
 }
 
 .project-details {
-	width: 45%;
+	width: 80%;
+	margin: 0 auto;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.3s;
+
+	&--active {
+		visibility: visible;
+		opacity: 1;
+	}
 
 	&__name {
 		margin-top: 0;
@@ -128,6 +162,7 @@
 	}
 
 	&__link {
+		font-size: $paragraphSize;
 		font-weight: $bold;
 		color: inherit;
 
