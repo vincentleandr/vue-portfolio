@@ -8,11 +8,7 @@
 	}
 }
 
-.test-scroll {
-	font-size: 7rem;
-	margin-top: 50px;
-}
-
+/*
 .project {
 	width: 100%;
 	cursor: pointer;
@@ -34,18 +30,26 @@
 		right: 0;
 	}
 }
+*/
 
 .overlay {
 	background-color: transparent;
 	color: $blackFont;
 	width: 48%;
-	transition: all 0.3s;
+	transition: all 0.2s;
+	top: 0;
+
+	&--left {
+		left: 0;
+	}
+
+	&--right {
+		right: 0;
+	}
 
 	&--active {
 		background-color: $white;
-		position: absolute;
-		top: 0;
-		left: 0;
+		position: fixed;
 		width: 100%;
 		height: 100vh;
 		opacity: 1;

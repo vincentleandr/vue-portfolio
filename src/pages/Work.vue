@@ -1,9 +1,10 @@
 <template>
     <div class="main-content d-flex d-flex--col animated fadeIn">
         <div class="d-flex j-sp-between f-wrap works-page">
+            
 
             <!-- Project 1 -->
-            <div :class="['overlay', {'overlay--active' : project.one}]">
+            <div :class="['overlay overlay--left', {'overlay--active' : project.one}]">
 
                 <div :class="['mac-border d-flex d-flex--col', {'mac-border--active' : project.one}]" @click="project.one = !project.one; overflowStatus = 'hidden'; preventScroll()">
                     <div class="mac-border__top d-flex a-center">
@@ -19,6 +20,69 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus tempora dicta repellat blanditiis amet in, itaque, sint error quidem nulla rerum, a molestiae voluptates modi est earum officiis adipisci ipsam!</p>
 
                     <a class="project-details__link btn-back" href="javascript:;" @click="project.one = false; overflowStatus = 'scroll'; preventScroll()">Back</a>
+                </div>
+
+            </div>
+
+            <!-- Project 2 -->
+            <div :class="['overlay overlay--right', {'overlay--active' : project.two}]">
+
+                <div :class="['mac-border d-flex d-flex--col', {'mac-border--active' : project.two}]" @click="project.two = !project.two; overflowStatus = 'hidden'; preventScroll()">
+                    <div class="mac-border__top d-flex a-center">
+                        <div class="mac-border__btn mac-border__btn--red"></div>
+                        <div class="mac-border__btn mac-border__btn--orange"></div>
+                        <div class="mac-border__btn mac-border__btn--green"></div>
+                    </div>
+                    <div class="mac-border__bg mac-border__bg--2"></div>
+                </div>
+
+                <div :class="['project-details', {'project-details--active' : project.two}]">
+                    <h2 class="project-details__name">TV-Maze Search</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus tempora dicta repellat blanditiis amet in, itaque, sint error quidem nulla rerum, a molestiae voluptates modi est earum officiis adipisci ipsam!</p>
+
+                    <a class="project-details__link btn-back" href="javascript:;" @click="project.two = false; overflowStatus = 'scroll'; preventScroll()">Back</a>
+                </div>
+                
+            </div>
+
+            <!-- Project 3 -->
+            <div :class="['overlay', {'overlay--active' : project.three}]">
+
+                <div :class="['mac-border d-flex d-flex--col', {'mac-border--active' : project.three}]" @click="project.three = !project.three; overflowStatus = 'hidden'; preventScroll()">
+                    <div class="mac-border__top d-flex a-center">
+                        <div class="mac-border__btn mac-border__btn--red"></div>
+                        <div class="mac-border__btn mac-border__btn--orange"></div>
+                        <div class="mac-border__btn mac-border__btn--green"></div>
+                    </div>
+                    <div class="mac-border__bg mac-border__bg--3"></div>
+                </div>
+
+                <div :class="['project-details', {'project-details--active' : project.three}]">
+                    <h2 class="project-details__name">TV-Maze Search</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus tempora dicta repellat blanditiis amet in, itaque, sint error quidem nulla rerum, a molestiae voluptates modi est earum officiis adipisci ipsam!</p>
+
+                    <a class="project-details__link btn-back" href="javascript:;" @click="project.three = false; overflowStatus = 'scroll'; preventScroll()">Back</a>
+                </div>
+                
+            </div>
+
+            <!-- Project 4 -->
+            <div :class="['overlay', {'overlay--active' : project.four}]">
+
+                <div :class="['mac-border d-flex d-flex--col', {'mac-border--active' : project.four}]" @click="project.four = !project.four; overflowStatus = 'hidden'; preventScroll()">
+                    <div class="mac-border__top d-flex a-center">
+                        <div class="mac-border__btn mac-border__btn--red"></div>
+                        <div class="mac-border__btn mac-border__btn--orange"></div>
+                        <div class="mac-border__btn mac-border__btn--green"></div>
+                    </div>
+                    <div class="mac-border__bg mac-border__bg--4"></div>
+                </div>
+
+                <div :class="['project-details', {'project-details--active' : project.four}]">
+                    <h2 class="project-details__name">TV-Maze Search</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus tempora dicta repellat blanditiis amet in, itaque, sint error quidem nulla rerum, a molestiae voluptates modi est earum officiis adipisci ipsam!</p>
+
+                    <a class="project-details__link btn-back" href="javascript:;" @click="project.four = false; overflowStatus = 'scroll'; preventScroll()">Back</a>
                 </div>
                 
             </div>
@@ -198,14 +262,16 @@ export default {
     return {
       project: {
           one: false,
-          two: false
+          two: false,
+          three: false,
+          four: false
       },
       overflowStatus: ''
     }
   },
   methods: {
     preventScroll () {
-      window.scrollTo(0, 0)
+      // window.scrollTo(0, 0)
       document.getElementsByTagName('html')[0].style.overflowY = this.overflowStatus
     }
   }
