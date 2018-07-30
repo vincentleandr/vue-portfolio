@@ -22,7 +22,7 @@
                         <p class="project-details__content">This is basically a search engine that search through <a class="project-details__link" href="https://www.tvmaze.com/" target="_blank">TVMaze</a>'s API. I made this because I want to learn about Redux, the concept of how it works and how it paired with React.</p>
 
                         <div class="project-details__content d-flex d-flex--col">
-                            <span class="project-details__label">Technologies</span>
+                            <span class="project-details__label">- Technologies</span>
                             <ul class="project-details__list">
                                 <li>React</li>
                                 <li>Redux</li>
