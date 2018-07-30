@@ -1,8 +1,8 @@
 .works-page {
-	margin-bottom: 30vh;
+	height: 100vh;
 
-	&:first-child {
-		margin-top: 155px;
+	&__section {
+		width: 100%;
 	}
 }
 
@@ -79,8 +79,26 @@
 		margin-top: 0;
 	}
 
+	&__meta {
+		margin: 3em 0;
+	}
+
 	&__label {
-		font-weight: 400;
+		font-size: 1.8rem;
+		font-weight: 500;
+		position: relative;
+		text-transform: uppercase;
+		padding-left: 25px;
+
+		&:before {
+			content: '';
+			width: 15px;
+			height: 3px;
+			background-color: #353535;
+			position: absolute;
+			left: 0px;
+			top: 10px;
+		}
 	}
 
 	&__link {
@@ -95,5 +113,11 @@
 	&__btn {
 		width: 30%;
 		margin: 30px 20px 0 0;
+	}
+
+	&__list {
+		font-size: $paragraphSize;
+		font-weight: $medium;
+		margin-top: 0.3em;
 	}
 }
