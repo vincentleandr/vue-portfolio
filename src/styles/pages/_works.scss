@@ -148,6 +148,7 @@
 .project-details {
 	width: 80%;
 	margin: 0 auto;
+	font-size: $paragraphSize;
 	visibility: hidden;
 	opacity: 0;
 	transition: all 0.3s;
@@ -178,5 +179,13 @@
 	&__btn {
 		width: 30%;
 		margin: 30px 20px 0 0;
+	}
+
+	&__content {
+		width: 48%;
+	}
+
+	&__list {
+		font-weight: $medium;
 	}
 }
