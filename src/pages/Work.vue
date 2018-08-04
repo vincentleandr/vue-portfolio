@@ -1,8 +1,8 @@
 <template>
     <div class="main-content d-flex d-flex--col animated fadeIn">
         <parallax-container class="works-page d-flex j-center a-center">
-            <div class="works-page__section d-flex j-sp-between">
-                <parallax-element class="mac-border d-flex d-flex--col" :parallaxStrength="-15" :type="'translation'">
+            <div :class="['works-page__section d-flex j-sp-between', {'d-flex--col' : window.width < 1024}]">
+                <parallax-element :class="['mac-border d-flex d-flex--col', {'mac-border--fw' : window.width < 1024}]" :parallaxStrength="-15" :type="'translation'">
                     <div class="mac-border__top d-flex a-center">
                         <div class="mac-border__btn mac-border__btn--red"></div>
                         <div class="mac-border__btn mac-border__btn--orange"></div>
@@ -11,7 +11,7 @@
                     <div class="mac-border__bg mac-border__bg--1"></div>
                 </parallax-element>
                 
-                <div class="project-details">
+                <div :class="['project-details', {'project-details--fw' : window.width < 1024}]">
                     <h2 class="project-details__name">TV-Maze Search</h2>
                     <p>A simple search engine for TV shows that search through <a class="project-details__link" href="https://www.tvmaze.com/" target="_blank">TVMaze</a>'s API. I made this project as a learning process to understand the concept of Redux and how it works, especially with React.</p>
 
@@ -24,9 +24,10 @@
                         </ul>
                     </div>
                     
-                    <div class="d-flex">
+                    <div class="d-flex a-center">
                         <a class="btn btn--main project-details__btn" href="https://tvmaze-search.surge.sh/" target="_blank">Visit</a>
                         <a class="btn btn--secondary project-details__btn" href="https://github.com/vincentleandr/react-redux-tvmaze" target="_blank">View Code</a>
+                        
                     </div>
                 </div>
             </div>
@@ -201,6 +202,27 @@
 
 <script>
 export default {
-  name: 'Work'
+  name: 'Work',
+  data () {
+    return {
+      window: {
+        width: 0,
+        height: 0
+      }
+    }
+  },
+  created () {
+    window.addEventListener('resize', this.handleResize)
+    this.handleResize()
+  },
+  destroyed () {
+    window.removeEventListener('resize', this.handleResize)
+  },
+  methods: {
+    handleResize () {
+      this.window.width = window.innerWidth
+      this.window.height = window.innerHeight
+    }
+  }
 }
 </script>
