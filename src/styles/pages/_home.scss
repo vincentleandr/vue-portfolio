@@ -111,7 +111,7 @@
 			color: $lightGray;
 		}
 
-		@media only screen and (max-width: 650px) {
+		@include breakpoint(mobile) {
 			font-size: $headerSizeMobile;
 		}
 	}
@@ -161,7 +161,7 @@
 			color: $lightGray;
 		}
 
-		@media only screen and (max-width: 650px) {
+		@include breakpoint(mobile) {
 			font-size: 2.5rem;
 		}
 	}
@@ -186,7 +186,7 @@
 
 
 
-@media only screen and (max-width: 1200px) {
+@include breakpoint(tablet) {
 	.header-name {
 		top: 20px;
 		left: 30px;

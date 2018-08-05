@@ -14,10 +14,6 @@
 
 	&__title {
 		margin-top: 0;
-
-		@media only screen and (max-width: 1024px) {
-			margin-top: 0.6em;
-		}
 	}
 
 	&__img {
@@ -25,8 +21,12 @@
 		box-shadow: 0 0 14px 0 rgba(0,0,0,0.15);
 	}
 
-	@media only screen and (max-width: 1024px) {
+	@include breakpoint(tablet) {
 		margin-top: 120px;
+
+		&__title {
+			margin-top: 0.6em;
+		}
 	}
 }
 

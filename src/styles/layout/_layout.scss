@@ -1,5 +1,35 @@
-$maxWidth: 70vw;
+/* Media Query Breakpoints Rules
+===================================== */
+@mixin breakpoint($point) {
+	@if $point == mobile {
+		@media only screen and (max-width: 650px)  {
+			@content;
+		}
+    }
+    
+    @if $point == tablet {
+		@media only screen and (max-width: 1200px) {
+			@content;
+		}
+    }
+    
+    @if $point == laptop {
+		@media only screen and (max-width: 1600px) {
+			@content;
+		}
+    }
+    
+    @if $point == desktop {
+		@media only screen and (min-width: 1601px) {
+			@content;
+		}
+	}
+}
 
+
+
+/* Basic Layout
+===================================== */
 .main-content {
 	max-width: calc(100vw - 350px);
 	min-width: auto;
@@ -8,12 +38,8 @@ $maxWidth: 70vw;
     &--fullpage {
         height: 100vh;
     }
-}
 
-
-
-@media only screen and (max-width: 1200px) {
-    .main-content {
+    @include breakpoint(tablet) {
         max-width: calc(100vw - 60px);
     }
 }

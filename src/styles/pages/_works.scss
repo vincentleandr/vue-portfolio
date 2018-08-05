@@ -9,13 +9,12 @@
 		width: 100%;
 	}
 
-	@media only screen and (max-width: 1024px) {
+	@include breakpoint(tablet) {
+		margin-bottom: 120px;
+
 		&:first-child {
 			margin-top: 120px;
 		}
-
-		height: auto;
-		margin-bottom: 120px
 	}
 }
 
@@ -100,7 +99,7 @@
 	&__name {
 		margin-top: 0;
 
-		@media only screen and (max-width: 1024px) {
+		@include breakpoint(tablet) {
 			margin-top: 0.6em;
 		}
 	}
@@ -110,7 +109,6 @@
 	}
 
 	&__link {
-		font-weight: $bold;
 		color: inherit;
 
 		&:hover {
@@ -126,11 +124,11 @@
 			margin-right: 0;
 		}
 
-		@media only screen and (max-width: 1024px) {
+		@include breakpoint(tablet) {
 			width: 50%;
 		}
 
-		@media only screen and (max-width: 550px) {
+		@include breakpoint(mobile) {
 			width: calc(100% - 2em);
 			margin-right: 0;
 			margin-bottom: 10px;
@@ -138,7 +136,6 @@
 	}
 
 	&__list {
-		font-weight: $medium;
 		margin-top: 0.3em;
 	}
 }

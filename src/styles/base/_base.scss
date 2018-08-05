@@ -17,6 +17,7 @@ body {
 	color: $blackFont;
 	overflow-x: hidden;
 
+	// Modify scrollbar style
 	&::-webkit-scrollbar {
 		width: 0.8em;
 	}
@@ -35,19 +36,6 @@ h2 {
     font-size: $headerSize;
     font-weight: $bold;
 	margin: 0 0 0.6em 0;
-	position: relative;
-	
-	&:after {
-		// content: '';
-		position: absolute;
-		bottom: -12px;
-		left: 0;
-		width: 1.4em;
-		height: 0.2em;
-		background-color: $orangeBg;
-		border-radius: 5px;
-		z-index: -1;
-	}
 }
 
 p {
@@ -59,18 +47,19 @@ p {
 }
 
 ul {
+	font-size: $paragraphSize;
+	font-weight: $medium;
 	list-style: none;
 	padding: 0;
 	margin: 0;
-	font-size: $paragraphSize;
 }
 
 .label {
 	font-size: 1.8rem;
-	font-weight: 500;
-	position: relative;
+	font-weight: $bold;
 	text-transform: uppercase;
 	padding-left: 25px;
+	position: relative;
 
 	&:before {
 		content: '';
@@ -79,18 +68,33 @@ ul {
 		background-color: #353535;
 		position: absolute;
 		left: 0px;
-		top: 10px;
+		top: 8px;
 	}
 }
 
-@media only screen and (max-width: 650px) {
+a {
+	font-size: $paragraphSize;
+	font-weight: $bold;
+	text-decoration: none;
+
+	&:visited {
+		color: inherit;
+	}
+}
+
+img {
+	width: 100%;
+}
+
+@include breakpoint(mobile) {
 	h1,
 	h2 {
 		font-size: $headerSizeMobile;
 	}
 
 	p,
-	ul {
+	ul,
+	a {
 		font-size: $paragraphSizeMobile;
 	}
 
@@ -103,18 +107,6 @@ ul {
 			top: 7px;
 		}
 	}
-}
-
-a {
-	text-decoration: none;
-
-	&:visited {
-		color: inherit;
-	}
-}
-
-img {
-	width: 100%;
 }
 
 
@@ -157,40 +149,36 @@ img {
     width: 80vh;
     height: 75vh;
 	border-radius: 50%;
-}
 
-
-
-@media only screen and (max-width: 1370px) {
-    // html {
-    //     font-size: 14px;
-    // }
-}
-
-@media only screen and (max-width: 1000px) {
-	// html {
-	// 	font-size: 13px;
-	// }
-
-	.circle-bg {
+	@include breakpoint(tablet) {
 		top: -20vh;
 		right: -25vw;
 		width: 85vw;
 		height: 55vh;
 	}
-}
 
-@media only screen and (max-width: 800px) {
-	// html {
-	// 	font-size: 11px;
-	// }
-}
-
-@media only screen and (max-width: 600px) {
-	.circle-bg {
+	@include breakpoint(mobile) {
 		top: -25vh;
 		right: -45vw;
 		width: 65vh;
 		height: 70vh;
 	}
 }
+
+// @media only screen and (max-width: 1024px) {
+// 	.circle-bg {
+// 		top: -20vh;
+// 		right: -25vw;
+// 		width: 85vw;
+// 		height: 55vh;
+// 	}
+// }
+
+// @media only screen and (max-width: 600px) {
+// 	.circle-bg {
+// 		top: -25vh;
+// 		right: -45vw;
+// 		width: 65vh;
+// 		height: 70vh;
+// 	}
+// }
