@@ -1,5 +1,15 @@
+$mobile: max-width 650px;
+
+@mixin breakpoint($point) {
+	@if $point == mobile {
+		@media only screen and (max-width: 650px)  {
+			@content;
+		} 
+	}
+}
+
 .contact-info {
-	width: 30%;
+	width: 50%;
 
 	&__link {
 		font-size: $paragraphSize;
@@ -8,6 +18,7 @@
 		transition: all 0.5s;
 		position: relative;
 		display: inline-block;
+		margin: 0 1em 0.6em 0;
 
 		i {
 			font-size: 2.4rem;
@@ -17,6 +28,16 @@
 			color: inherit;
 			text-decoration: underline;
 		}
+
+		/*
+		@media only screen and (max-width: 650px) {
+			font-size: $paragraphSizeMobile;
+		}
+		*/
+
+		@include breakpoint(mobile) {
+			font-size: $paragraphSizeMobile;
+		}
 	}
 }
 
@@ -25,14 +46,5 @@
 @media only screen and (max-width: 1350px) {
 	.contact-info {
 		width: 100%;
-		margin-bottom: 5em;
-
-		.menu-social__option {
-			margin-right: 30px;
-		}
-
-		&:last-child {
-			margin-bottom: 0;
-		}
 	}
 }

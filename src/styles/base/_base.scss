@@ -58,21 +58,51 @@ p {
 	margin-bottom: 0.8em;
 }
 
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-size: $paragraphSize;
+}
+
+.label {
+	font-size: 1.8rem;
+	font-weight: 500;
+	position: relative;
+	text-transform: uppercase;
+	padding-left: 25px;
+
+	&:before {
+		content: '';
+		width: 15px;
+		height: 3px;
+		background-color: #353535;
+		position: absolute;
+		left: 0px;
+		top: 10px;
+	}
+}
+
 @media only screen and (max-width: 650px) {
 	h1,
 	h2 {
 		font-size: $headerSizeMobile;
 	}
 
-	p {
+	p,
+	ul {
 		font-size: $paragraphSizeMobile;
 	}
-}
 
-ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
+	.label {
+		font-size: 1.6rem;
+		padding-left: 18px;
+
+		&:before {
+			width: 10px;
+			top: 7px;
+		}
+	}
 }
 
 a {
