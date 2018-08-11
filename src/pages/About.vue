@@ -8,8 +8,8 @@
             <div :class="['about-page__section d-flex d-flex--col', {'about-page__section--fw' : window.width <= 1200}]">
                 <h2 class="about-page__title">Who I Am</h2>
                 <p>My name is Vincent Leander. I'm a passionate and ambitious learner. One of my major passion has always been on web development.</p>
-                <p>It all started a year ago. I started as an intern and I was introduced to web development. Apparently, I really enjoy my time building sites and pages. I fell in love with it pretty quick and decided to make it into a career.</p>
-                <p>Along the way, I've learned a great deal of things related to web development but that doesn't mean that I stopped learning. I also found a new passion in UI/UX. I think I always have a good eyes and taste for designing things.</p>
+                <p>It all started two years ago. I started as an intern and I was introduced to web development. I fell in love with it pretty quick and decided to make it into a career.</p>
+                <p></p>
             </div>
 
             <parallax-element class="about-page__section d-flex d-flex--col" :parallaxStrength="-15" :type="'translation'" v-if="window.width > 1200">
@@ -28,53 +28,46 @@
             </div>
         </parallax-container>
 
-        <div class="about-page d-flex j-sp-between">
-            <div class="about-page__section--fw d-flex d-flex--col">
-                <h2 class="about-page__title">Skill Sets</h2>
-                <div class="skill-sets d-flex j-center">
-                    <div class="skill-sets__icon d-flex j-center a-start">
-                        <img src="../assets/icons/html5.svg" alt="HTML 5">
-                        <span class="skill-sets__name">HTML 5</span>
+        <div class="about-page d-flex d-flex--col">
+            <h2 class="about-page__title">Skill Sets</h2>
+
+            <div :class="['d-flex j-sp-between', {'d-flex--col' : window.width <= 1200}]">
+                <div :class="['about-page__section d-flex d-flex--col', {'about-page__section--fw' : window.width <= 1200}]">
+                    <p>Along the way, I've been learning great deal of things related to web development. To help me learning, I like to apply them to the project I'm working on.</p>
+                    <p>When starting a new project, when necessary, I usually pick either React or Vue for the framework. As for styling, most of the time I use Sass with BEM method.</p>
+                </div>
+
+                <div :class="['about-page__section d-flex j-sp-between f-wrap', {'about-page__section--fw' : window.width <= 1200}]">
+                    <div class="about-page__list d-flex d-flex--col">
+                        <span class="label">Basic</span>
+                        <ul class="project-details__list">
+                            <li>Html</li>
+                            <li>Css</li>
+                            <li>Javascript</li>
+                            <li>Jquery</li>
+                        </ul>
                     </div>
-                    <div class="skill-sets__icon d-flex j-center a-start">
-                        <img src="../assets/icons/css3.svg" alt="CSS 3">
-                        <span class="skill-sets__name">CSS 3</span>
+                    <div class="about-page__list d-flex d-flex--col">
+                        <span class="label">Styling</span>
+                        <ul class="project-details__list">
+                            <li>Sass</li>
+                            <li>Bootstrap</li>
+                        </ul>
                     </div>
-                    <div class="skill-sets__icon d-flex j-center a-start">
-                        <img src="../assets/icons/javascript.svg" alt="Javascript">
-                        <span class="skill-sets__name">Javascript</span>
+                    <div class="about-page__list d-flex d-flex--col">
+                        <span class="label">Framework</span>
+                        <ul class="project-details__list">
+                            <li>React.js</li>
+                            <li>Vue.js</li>
+                        </ul>
                     </div>
-                    <div class="skill-sets__icon d-flex j-center a-start">
-                        <img src="../assets/icons/reactjs.svg" alt="React.js">
-                        <span class="skill-sets__name">React.js</span>
-                    </div>
-                    <div class="skill-sets__icon d-flex j-center a-start">
-                        <img src="../assets/icons/vuejs.svg" alt="Vue.js">
-                        <span class="skill-sets__name">Vue.js</span>
-                    </div>
-                    <div class="skill-sets__icon d-flex j-center a-start">
-                        <img src="../assets/icons/jquery.svg" alt="Jquery">
-                        <span class="skill-sets__name">JQuery</span>
-                    </div>
-                    <div class="skill-sets__icon d-flex j-center a-start">
-                        <img src="../assets/icons/sass.svg" alt="SASS">
-                        <span class="skill-sets__name">SASS</span>
-                    </div>
-                    <div class="skill-sets__icon d-flex j-center a-start">
-                        <img src="../assets/icons/bootstrap.svg" alt="Bootstrap">
-                        <span class="skill-sets__name">Bootstrap</span>
-                    </div>
-                    <div class="skill-sets__icon d-flex j-center a-start">
-                        <img src="../assets/icons/git.svg" alt="Git">
-                        <span class="skill-sets__name">Git</span>
-                    </div>
-                    <div class="skill-sets__icon d-flex j-center a-start">
-                        <img src="../assets/icons/webpack.svg" alt="Webpack">
-                        <span class="skill-sets__name">Webpack</span>
-                    </div>
-                    <div class="skill-sets__icon d-flex j-center a-start">
-                        <img src="../assets/icons/gulpjs.svg" alt="Gulp.js">
-                        <span class="skill-sets__name">Gulp.js</span>
+                    <div class="about-page__list d-flex d-flex--col">
+                        <span class="label">Others</span>
+                        <ul class="project-details__list">
+                            <li>Git</li>
+                            <li>Webpack</li>
+                            <li>Gulp.js</li>
+                        </ul>
                     </div>
                 </div>
             </div>

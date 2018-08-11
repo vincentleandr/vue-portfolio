@@ -21,11 +21,24 @@
 		box-shadow: 0 0 14px 0 rgba(0,0,0,0.15);
 	}
 
+	&__list {
+		margin: 0 0 5em 0;
+	}
+
+	&:last-child {
+		margin-bottom: 100px;
+	}
+
 	@include breakpoint(tablet) {
 		margin-top: 120px;
 
 		&__title {
 			margin-top: 0.6em;
+		}
+
+		&__list {
+			width: 50%;
+			margin: 1em 0 3em 0;
 		}
 	}
 }
