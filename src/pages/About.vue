@@ -1,9 +1,9 @@
 <template>
     <div class="main-content d-flex d-flex--col animated fadeIn">
-        <parallax-container :class="['about-page d-flex j-sp-between', {'d-flex--col' : window.width <= 1200}]">
-            <parallax-element class="about-page__section--fw d-flex d-flex--col" :parallaxStrength="-15" :type="'translation'" v-if="window.width <= 1200">
+        <div :class="['about-page d-flex j-sp-between a-center', {'d-flex--col' : window.width <= 1200}]">
+            <div class="about-page__section--fw d-flex d-flex--col" v-if="window.width <= 1200">
                 <img class="about-page__img" src="../assets/images/self-pic-1.jpg" alt="Who I Am">
-            </parallax-element>
+            </div>
             
             <div :class="['about-page__section d-flex d-flex--col', {'about-page__section--fw' : window.width <= 1200}]">
                 <h2 class="about-page__title">Who I Am</h2>
@@ -12,21 +12,21 @@
                 <p></p>
             </div>
 
-            <parallax-element class="about-page__section d-flex d-flex--col" :parallaxStrength="-15" :type="'translation'" v-if="window.width > 1200">
+            <div class="about-page__section d-flex d-flex--col" v-if="window.width > 1200">
                 <img class="about-page__img" src="../assets/images/self-pic-1.jpg" alt="Who I Am">
-            </parallax-element>
-        </parallax-container>
+            </div>
+        </div>
 
-        <parallax-container :class="['about-page d-flex j-sp-between', {'d-flex--col' : window.width <= 1200}]">
-            <parallax-element :class="['about-page__section d-flex d-flex--col', {'about-page__section--fw' : window.width <= 1200}]" :parallaxStrength="-15" :type="'translation'">
+        <div :class="['about-page d-flex j-sp-between a-center', {'d-flex--col' : window.width <= 1200}]">
+            <div :class="['about-page__section d-flex d-flex--col', {'about-page__section--fw' : window.width <= 1200}]">
                 <img class="about-page__img" src="../assets/images/typing.jpg" alt="What I Do">
-            </parallax-element>
+            </div>
             <div :class="['about-page__section d-flex d-flex--col', {'about-page__section--fw' : window.width <= 1200}]">
                 <h2 class="about-page__title">What I Do</h2>
                 <p>I prefer simplicity and minimalism when building/designing websites. However, I like to make it interactive. I believe this can make a major impact on an even a simple website to look more sophisticated and attractive to users.</p>
                 <p>I'm also a true admirer of great user experience. I always do some research before starting and I always consider the best flow and way for a website and for all the user interfaces.</p>
             </div>
-        </parallax-container>
+        </div>
 
         <div class="about-page d-flex d-flex--col">
             <h2 class="about-page__title">Skill Sets</h2>
@@ -37,36 +37,36 @@
                     <p>When starting a new project, when necessary, I usually pick either React or Vue for the framework. As for styling, most of the time I use Sass with BEM method.</p>
                 </div>
 
-                <div :class="['about-page__section d-flex j-sp-between f-wrap', {'about-page__section--fw' : window.width <= 1200}]">
+                <div :class="['about-page__section d-flex d-flex--col', {'about-page__section--fw' : window.width <= 1200}]">
                     <div class="about-page__list d-flex d-flex--col">
                         <span class="label">Basic</span>
-                        <ul class="project-details__list">
-                            <li>Html</li>
-                            <li>Css</li>
-                            <li>Javascript</li>
-                            <li>Jquery</li>
+                        <ul class="about-page__icon-grp d-flex">
+                            <li class="about-page__icon d-flex"><img src="../assets/icons/html5.svg" alt="html5"></li>
+                            <li class="about-page__icon d-flex"><img src="../assets/icons/css3.svg" alt="css3"></li>
+                            <li class="about-page__icon d-flex"><img src="../assets/icons/javascript.svg" alt="javascript"></li>
+                            <li class="about-page__icon d-flex"><img src="../assets/icons/jquery.svg" alt="jquery"></li>
                         </ul>
                     </div>
                     <div class="about-page__list d-flex d-flex--col">
                         <span class="label">Styling</span>
-                        <ul class="project-details__list">
-                            <li>Sass</li>
-                            <li>Bootstrap</li>
+                        <ul class="about-page__icon-grp d-flex">
+                            <li class="about-page__icon d-flex"><img src="../assets/icons/sass.svg" alt="sass"></li>
+                            <li class="about-page__icon d-flex"><img src="../assets/icons/bootstrap.svg" alt="bootstrap"></li>
                         </ul>
                     </div>
                     <div class="about-page__list d-flex d-flex--col">
                         <span class="label">Framework</span>
-                        <ul class="project-details__list">
-                            <li>React.js</li>
-                            <li>Vue.js</li>
+                        <ul class="about-page__icon-grp d-flex">
+                            <li class="about-page__icon d-flex"><img src="../assets/icons/reactjs.svg" alt="reactjs"></li>
+                            <li class="about-page__icon d-flex"><img src="../assets/icons/vuejs.svg" alt="vuejs"></li>
                         </ul>
                     </div>
                     <div class="about-page__list d-flex d-flex--col">
                         <span class="label">Others</span>
-                        <ul class="project-details__list">
-                            <li>Git</li>
-                            <li>Webpack</li>
-                            <li>Gulp.js</li>
+                        <ul class="about-page__icon-grp d-flex">
+                            <li class="about-page__icon d-flex"><img src="../assets/icons/git.svg" alt="git"></li>
+                            <li class="about-page__icon d-flex"><img src="../assets/icons/gulpjs.svg" alt="gulpjs"></li>
+                            <li class="about-page__icon d-flex"><img src="../assets/icons/webpack.svg" alt="webpack"></li>
                         </ul>
                     </div>
                 </div>

@@ -1,15 +1,15 @@
 <template>
     <div class="main-content d-flex d-flex--col animated fadeIn">
-        <parallax-container class="works-page d-flex">
+        <div class="works-page d-flex">
             <div :class="['works-page__section d-flex j-sp-between', {'d-flex--col' : window.width < 1200}]">
-                <parallax-element :class="['mac-border d-flex d-flex--col', {'mac-border--fw' : window.width < 1200}]" :parallaxStrength="-15" :type="'translation'">
+                <div :class="['mac-border d-flex d-flex--col', {'mac-border--fw' : window.width < 1200}]" >
                     <div class="mac-border__top d-flex a-center">
                         <div class="mac-border__btn mac-border__btn--red"></div>
                         <div class="mac-border__btn mac-border__btn--orange"></div>
                         <div class="mac-border__btn mac-border__btn--green"></div>
                     </div>
                     <div class="mac-border__bg mac-border__bg--1"></div>
-                </parallax-element>
+                </div>
                 
                 <div :class="['project-details', {'project-details--fw' : window.width < 1200}]">
                     <h2 class="project-details__name">TV-Maze Search</h2>
@@ -17,10 +17,10 @@
 
                     <div class="project-details__meta d-flex d-flex--col">
                         <span class="label">Technologies</span>
-                        <ul class="project-details__list">
-                            <li>React</li>
-                            <li>Redux</li>
-                            <li>Sass</li>
+                        <ul class="project-details__list d-flex">
+                            <li class="project-details__icon d-flex"><img src="../assets/icons/reactjs.svg" alt="reactjs"></li>
+                            <li class="project-details__icon d-flex"><img src="../assets/icons/redux.svg" alt="redux"></li>
+                            <li class="project-details__icon d-flex"><img src="../assets/icons/sass.svg" alt="sass"></li>
                         </ul>
                     </div>
                     
@@ -31,18 +31,18 @@
                     </div>
                 </div>
             </div>
-        </parallax-container>
+        </div>
 
-        <parallax-container class="works-page d-flex j-center a-center">
+        <div class="works-page works-page--gray d-flex j-center a-center">
             <div :class="['works-page__section d-flex j-sp-between', {'d-flex--col' : window.width < 1200}]">
-                <parallax-element :class="['mac-border d-flex d-flex--col', {'mac-border--fw' : window.width < 1200}]" :parallaxStrength="-15" :type="'translation'">
+                <div :class="['mac-border d-flex d-flex--col', {'mac-border--fw' : window.width < 1200}]" >
                     <div class="mac-border__top d-flex a-center">
                         <div class="mac-border__btn mac-border__btn--red"></div>
                         <div class="mac-border__btn mac-border__btn--orange"></div>
                         <div class="mac-border__btn mac-border__btn--green"></div>
                     </div>
                     <div class="mac-border__bg mac-border__bg--2"></div>
-                </parallax-element>
+                </div>
                 
                 <div :class="['project-details', {'project-details--fw' : window.width < 1200}]">
                     <h2 class="project-details__name">My Scholarships</h2>
@@ -50,12 +50,12 @@
 
                     <div class="project-details__meta d-flex d-flex--col">
                         <span class="label">Technologies</span>
-                        <ul class="project-details__list">
-                            <li>Html</li>
-                            <li>Css</li>
-                            <li>Bootstrap</li>
-                            <li>Javascript</li>
-                            <li>Jquery</li>
+                        <ul class="project-details__list d-flex">
+                            <li class="project-details__icon d-flex"><img src="../assets/icons/html5.svg" alt="html5"></li>
+                            <li class="project-details__icon d-flex"><img src="../assets/icons/css3.svg" alt="css3"></li>
+                            <li class="project-details__icon d-flex"><img src="../assets/icons/bootstrap.svg" alt="bootstrap"></li>
+                            <li class="project-details__icon d-flex"><img src="../assets/icons/javascript.svg" alt="javascript"></li>
+                            <li class="project-details__icon d-flex"><img src="../assets/icons/jquery.svg" alt="jquery"></li>
                         </ul>
                     </div>
                     
@@ -64,18 +64,18 @@
                     </div>
                 </div>
             </div>
-        </parallax-container>
+        </div>
 
-        <parallax-container class="works-page d-flex j-center a-center">
+        <div class="works-page d-flex j-center a-center">
             <div :class="['works-page__section d-flex j-sp-between', {'d-flex--col' : window.width < 1200}]">
-                <parallax-element :class="['mac-border d-flex d-flex--col', {'mac-border--fw' : window.width < 1200}]" :parallaxStrength="-15" :type="'translation'">
+                <div :class="['mac-border d-flex d-flex--col', {'mac-border--fw' : window.width < 1200}]" >
                     <div class="mac-border__top d-flex a-center">
                         <div class="mac-border__btn mac-border__btn--red"></div>
                         <div class="mac-border__btn mac-border__btn--orange"></div>
                         <div class="mac-border__btn mac-border__btn--green"></div>
                     </div>
                     <div class="mac-border__bg mac-border__bg--3"></div>
-                </parallax-element>
+                </div>
                 
                 <div :class="['project-details', {'project-details--fw' : window.width < 1200}]">
                     <h2 class="project-details__name">Personal Web</h2>
@@ -83,10 +83,10 @@
 
                     <div class="project-details__meta d-flex d-flex--col">
                         <span class="label">Technologies</span>
-                        <ul class="project-details__list">
-                            <li>Vue</li>
-                            <li>Sass</li>
-                            <li>Webpack</li>
+                        <ul class="project-details__list d-flex">
+                            <li class="project-details__icon d-flex"><img src="../assets/icons/vuejs.svg" alt="vuejs"></li>
+                            <li class="project-details__icon d-flex"><img src="../assets/icons/sass.svg" alt="sass"></li>
+                            <li class="project-details__icon d-flex"><img src="../assets/icons/webpack.svg" alt="webpack"></li>
                         </ul>
                     </div>
                     
@@ -95,18 +95,18 @@
                     </div>
                 </div>
             </div>
-        </parallax-container>
+        </div>
 
-        <parallax-container class="works-page d-flex j-center a-center">
+        <div class="works-page d-flex j-center a-center">
             <div :class="['works-page__section d-flex j-sp-between', {'d-flex--col' : window.width < 1200}]">
-                <parallax-element :class="['mac-border d-flex d-flex--col', {'mac-border--fw' : window.width < 1200}]" :parallaxStrength="-15" :type="'translation'">
+                <div :class="['mac-border d-flex d-flex--col', {'mac-border--fw' : window.width < 1200}]" >
                     <div class="mac-border__top d-flex a-center">
                         <div class="mac-border__btn mac-border__btn--red"></div>
                         <div class="mac-border__btn mac-border__btn--orange"></div>
                         <div class="mac-border__btn mac-border__btn--green"></div>
                     </div>
                     <div class="mac-border__bg mac-border__bg--4"></div>
-                </parallax-element>
+                </div>
                 
                 <div :class="['project-details', {'project-details--fw' : window.width < 1200}]">
                     <h2 class="project-details__name">Mini Quiz</h2>
@@ -114,11 +114,11 @@
 
                     <div class="project-details__meta d-flex d-flex--col">
                         <span class="label">Technologies</span>
-                        <ul class="project-details__list">
-                            <li>Html</li>
-                            <li>Css</li>
-                            <li>Javascript</li>
-                            <li>Jquery</li>
+                        <ul class="project-details__list d-flex">
+                            <li class="project-details__icon d-flex"><img src="../assets/icons/html5.svg" alt="html5"></li>
+                            <li class="project-details__icon d-flex"><img src="../assets/icons/css3.svg" alt="css3"></li>
+                            <li class="project-details__icon d-flex"><img src="../assets/icons/javascript.svg" alt="javascript"></li>
+                            <li class="project-details__icon d-flex"><img src="../assets/icons/jquery.svg" alt="jquery"></li>
                         </ul>
                     </div>
                     
@@ -129,18 +129,18 @@
                 </div>
 
             </div>
-        </parallax-container>
+        </div>
 
-        <parallax-container class="works-page d-flex j-center a-center">
+        <div class="works-page d-flex j-center a-center">
             <div :class="['works-page__section d-flex j-sp-between', {'d-flex--col' : window.width < 1200}]">
-                <parallax-element :class="['mac-border d-flex d-flex--col', {'mac-border--fw' : window.width < 1200}]" :parallaxStrength="-15" :type="'translation'">
+                <div :class="['mac-border d-flex d-flex--col', {'mac-border--fw' : window.width < 1200}]" >
                     <div class="mac-border__top d-flex a-center">
                         <div class="mac-border__btn mac-border__btn--red"></div>
                         <div class="mac-border__btn mac-border__btn--orange"></div>
                         <div class="mac-border__btn mac-border__btn--green"></div>
                     </div>
                     <div class="mac-border__bg mac-border__bg--5"></div>
-                </parallax-element>
+                </div>
                 
                 <div :class="['project-details', {'project-details--fw' : window.width < 1200}]">
                     <h2 class="project-details__name">Get It Done</h2>
@@ -148,12 +148,12 @@
 
                     <div class="project-details__meta d-flex d-flex--col">
                         <span class="label">Technologies</span>
-                        <ul class="project-details__list">
-                            <li>Html</li>
-                            <li>Css</li>
-                            <li>Bootstrap</li>
-                            <li>Javascript</li>
-                            <li>Jquery</li>
+                        <ul class="project-details__list d-flex">
+                            <li class="project-details__icon d-flex"><img src="../assets/icons/html5.svg" alt="html5"></li>
+                            <li class="project-details__icon d-flex"><img src="../assets/icons/css3.svg" alt="css3"></li>
+                            <li class="project-details__icon d-flex"><img src="../assets/icons/bootstrap.svg" alt="bootstrap"></li>
+                            <li class="project-details__icon d-flex"><img src="../assets/icons/javascript.svg" alt="javascript"></li>
+                            <li class="project-details__icon d-flex"><img src="../assets/icons/jquery.svg" alt="jquery"></li>
                         </ul>
                     </div>
                     
@@ -164,18 +164,18 @@
                 </div>
 
             </div>
-        </parallax-container>
+        </div>
 
-        <parallax-container class="works-page d-flex j-center a-center">
+        <div class="works-page d-flex j-center a-center">
             <div :class="['works-page__section d-flex j-sp-between', {'d-flex--col' : window.width < 1200}]">
-                <parallax-element :class="['mac-border d-flex d-flex--col', {'mac-border--fw' : window.width < 1200}]" :parallaxStrength="-15" :type="'translation'">
+                <div :class="['mac-border d-flex d-flex--col', {'mac-border--fw' : window.width < 1200}]" >
                     <div class="mac-border__top d-flex a-center">
                         <div class="mac-border__btn mac-border__btn--red"></div>
                         <div class="mac-border__btn mac-border__btn--orange"></div>
                         <div class="mac-border__btn mac-border__btn--green"></div>
                     </div>
                     <div class="mac-border__bg mac-border__bg--6"></div>
-                </parallax-element>
+                </div>
                 
                 <div :class="['project-details', {'project-details--fw' : window.width < 1200}]">
                     <h2 class="project-details__name">Social Card</h2>
@@ -183,9 +183,9 @@
 
                     <div class="project-details__meta d-flex d-flex--col">
                         <span class="label">Technologies</span>
-                        <ul class="project-details__list">
-                            <li>React</li>
-                            <li>Sass</li>
+                        <ul class="project-details__list d-flex">
+                            <li class="project-details__icon d-flex"><img src="../assets/icons/reactjs.svg" alt="reactjs"></li>
+                            <li class="project-details__icon d-flex"><img src="../assets/icons/sass.svg" alt="sass"></li>
                         </ul>
                     </div>
                     
@@ -196,7 +196,7 @@
                 </div>
 
             </div>
-        </parallax-container>
+        </div>
     </div>
 </template>
 

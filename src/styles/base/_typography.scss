@@ -1,31 +1,13 @@
 $baseFont: 'FuturaPT';
 
-$light: 100;
-$book: 200;
 $medium: 300;
-$heavy: 400;
 $bold: 500;
-$extrabold: 600;
 
 $headerSize: 6rem;
 $paragraphSize: 2.4rem;
 
 $headerSizeMobile: 4rem;
 $paragraphSizeMobile: 2rem;
-
-@font-face {
-    font-family: $baseFont;
-    src: url('../assets/fonts/FuturaPTLight.woff') format('woff');
-    font-style: normal;
-    font-weight: $light;
-}
-
-@font-face {
-    font-family: $baseFont;
-    src: url('../assets/fonts/FuturaPTBook.woff') format('woff');
-    font-style: normal;
-    font-weight: $book;
-}
 
 @font-face {
     font-family: $baseFont;
@@ -36,21 +18,7 @@ $paragraphSizeMobile: 2rem;
 
 @font-face {
     font-family: $baseFont;
-    src: url('../assets/fonts/FuturaPTHeavy.woff') format('woff');
-    font-style: normal;
-    font-weight: $heavy;
-}
-
-@font-face {
-    font-family: $baseFont;
     src: url('../assets/fonts/FuturaPTBold.woff') format('woff');
     font-style: normal;
     font-weight: $bold;
-}
-
-@font-face {
-    font-family: $baseFont;
-    src: url('../assets/fonts/FuturaPTExtraBold.woff') format('woff');
-    font-style: normal;
-    font-weight: $extrabold;
 }
