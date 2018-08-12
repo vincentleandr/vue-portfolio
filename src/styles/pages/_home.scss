@@ -12,14 +12,15 @@
 	height: 45px;
 	z-index: 2;
 
-	&--white {
-		color: $white;
-	}
-
 	&__text {
 		font-size: 28px;
 		font-weight: $bold;
 		text-decoration: none;
+		color: $blackFont;
+	}
+
+	&__text--white {
+		color: $white !important;
 	}
 }
 

@@ -1,8 +1,8 @@
 <template>
     <div>
         <header class="header-container">
-			<div :class="['header-name d-flex j-center a-center', {'header-name--white' : menuActive}]" @click="menuActive = false">
-				<router-link class="header-name__text" :to="{ name: 'Home' }">Vin.</router-link>
+			<div class="header-name d-flex j-center a-center" @click="menuActive = false">
+				<router-link :class="['header-name__text', {'header-name__text--white' : menuActive}]" :to="{ name: 'Home' }">Vin.</router-link>
 			</div>
 
 			<div :class="['burger-menu d-flex d-flex--col j-center a-end', {'burger-menu--change' : menuActive}]" 
