@@ -87,7 +87,7 @@
                 
                 <div :class="['project-details', {'project-details--fw' : window.width < 1200}]">
                     <h2 class="project-details__name">Personal Web</h2>
-                    <p>I consider this personal web as one of my project. This personal web is also my portfolio to showcase my works.</p>
+                    <p>I consider this personal web as one of my project. This personal web is also my portfolio to showcase my works. This is also my learning experience for Vue.js.</p>
 
                     <div class="project-details__meta d-flex d-flex--col">
                         <span class="label">Technologies</span>
@@ -189,7 +189,7 @@
                 
                 <div :class="['project-details', {'project-details--fw' : window.width < 1200}]">
                     <h2 class="project-details__name">Social Card</h2>
-                    <p>My first React project. I learned the basic concept of React from this project like props, state, components, etc. This is also the first time I implemented Sass on a project.</p>
+                    <p>My first React project, a simple one really. I learned the basic concept of React from this project like props, state, components, etc. This is also the first time I implemented Sass on a project.</p>
 
                     <div class="project-details__meta d-flex d-flex--col">
                         <span class="label">Technologies</span>

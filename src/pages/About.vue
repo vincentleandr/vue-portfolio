@@ -23,8 +23,8 @@
             <div :class="['about-page__section d-flex d-flex--col', {'about-page__section--fw' : window.width <= 1200}]">
                 <h2 class="about-page__title">What I Do</h2>
                 <p>I specialize in front end development. Basically I creates every single visual component you can see on a website.</p>
-                <p>I prefer simplicity and minimalism when building/designing websites. However, I like to make it interactive. I believe this can make a major impact on even a simple website to look more sophisticated and attractive to users.</p>
-                <p>I'm also a true admirer of great user experience. I make sure to do a little research before starting and I always consider the best flow and way for a website and for all the user interfaces.</p>
+                <p>Simplicity, interactive and responsive are my top priorities when building/designing websites.</p>
+                <p>I'm also a true admirer of great user experience. I make sure to do a little research before starting and I always consider the best flow for a website and for all the user interfaces.</p>
             </div>
         </div>
 

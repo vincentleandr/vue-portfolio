@@ -93,6 +93,10 @@
 		z-index: 1;
 		visibility: visible;
 	}
+
+	@include breakpoint(tablet) {
+		height: 100%;
+	}
 }
 
 .menu {
