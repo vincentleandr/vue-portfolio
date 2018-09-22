@@ -78,6 +78,7 @@
 </template>
 
 <script>
+import WOW from 'wowjs'
 
 export default {
   name: 'About',
@@ -92,6 +93,7 @@ export default {
   created () {
     window.addEventListener('resize', this.handleResize)
     this.handleResize()
+    new WOW.WOW().init()
   },
   destroyed () {
     window.removeEventListener('resize', this.handleResize)
