@@ -9,7 +9,7 @@
                         <div class="mac-border__btn mac-border__btn--green"></div>
                     </div>
                     <div class="mac-border__bg mac-border__bg--1"></div>
-                    <a class="divlinker" href="https://tvmaze-search.surge.sh/" target="_blank"></a>
+                    <a class="divlinker" href="http://tvmaze-search.surge.sh/" target="_blank"></a>
                 </div>
                 
                 <div :class="['project-details', {'project-details--fw' : window.width < 1200}]">

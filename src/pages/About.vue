@@ -34,7 +34,7 @@
             <div :class="['d-flex j-sp-between', {'d-flex--col' : window.width <= 1200}]">
                 <div :class="['about-page__section d-flex d-flex--col', {'about-page__section--fw' : window.width <= 1200}]">
                     <p>Along the way, I've been learning great deal of things related to web development. To help me learning, I like to apply them to the project I'm working on.</p>
-                    <p>When starting a new project, if it's necessary, I usually pick either React or Vue for the framework. As for styling, most of the time I use Sass with BEM method.</p>
+                    <p>When starting a new project, if it's necessary, I usually pick either React or Vue for the framework. As for styling, most of the time I use Sass.</p>
                 </div>
 
                 <div :class="['about-page__section d-flex d-flex--col', {'about-page__section--fw' : window.width <= 1200}]">
